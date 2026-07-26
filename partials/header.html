@@ -1,0 +1,210 @@
+<header class="orebro-site-header">
+  <style>
+    .orebro-site-header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      border-bottom:1px solid #dfe6df;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    }
+
+    .orebro-header-wrap{
+      width:min(100% - 40px,1160px);
+      min-height:72px;
+      margin-inline:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .orebro-brand{
+      color:#142017;
+      text-decoration:none;
+      font-weight:950;
+      letter-spacing:.01em;
+      line-height:1.1;
+      white-space:nowrap;
+    }
+
+    .orebro-brand-name{
+      display:block;
+      font-size:17px;
+    }
+
+    .orebro-brand-sub{
+      display:block;
+      margin-top:5px;
+      color:#68766b;
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+
+    .orebro-nav{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:3px;
+    }
+
+    .orebro-nav a{
+      padding:9px 10px;
+      border-radius:10px;
+      color:#1d2b20;
+      text-decoration:none;
+      font-size:13px;
+      font-weight:760;
+      white-space:nowrap;
+    }
+
+    .orebro-nav a:hover,
+    .orebro-nav a:focus-visible{
+      background:#eaf1ea;
+      outline:none;
+    }
+
+    .orebro-nav .orebro-facebook{
+      color:#405c44;
+    }
+
+    .orebro-nav .orebro-contact{
+      margin-left:4px;
+      padding:10px 14px;
+      background:#142317;
+      color:#fff;
+    }
+
+    .orebro-nav .orebro-contact:hover,
+    .orebro-nav .orebro-contact:focus-visible{
+      background:#2b4930;
+    }
+
+    .orebro-menu-button{
+      display:none;
+      width:44px;
+      height:44px;
+      padding:0;
+      border:1px solid #d7dfd8;
+      border-radius:11px;
+      background:#fff;
+      color:#142017;
+      cursor:pointer;
+      font-size:23px;
+      line-height:1;
+    }
+
+    @media(max-width:920px){
+      .orebro-header-wrap{
+        position:relative;
+        min-height:68px;
+      }
+
+      .orebro-menu-button{
+        display:grid;
+        place-items:center;
+      }
+
+      .orebro-nav{
+        display:none;
+        position:absolute;
+        top:calc(100% + 1px);
+        left:0;
+        right:0;
+        padding:12px 20px 18px;
+        background:#fff;
+        border-bottom:1px solid #dfe6df;
+        box-shadow:0 14px 30px rgba(20,35,23,.10);
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .orebro-nav.is-open{
+        display:flex;
+      }
+
+      .orebro-nav a{
+        padding:12px;
+        font-size:14px;
+      }
+
+      .orebro-nav .orebro-contact{
+        margin:5px 0 0;
+        text-align:center;
+      }
+    }
+
+    @media(max-width:520px){
+      .orebro-header-wrap{
+        width:min(100% - 28px,1160px);
+      }
+
+      .orebro-brand-name{
+        font-size:15px;
+      }
+
+      .orebro-brand-sub{
+        font-size:10px;
+      }
+    }
+  </style>
+
+  <div class="orebro-header-wrap">
+    <a class="orebro-brand" href="/" aria-label="Örebro Maskin & Återbruk – startsida">
+      <span class="orebro-brand-name">Örebro Maskin &amp; Återbruk</span>
+      <span class="orebro-brand-sub">Lokalt • personligt • återbruk</span>
+    </a>
+
+    <button
+      class="orebro-menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="orebro-main-nav"
+      aria-label="Öppna meny">
+      ☰
+    </button>
+
+    <nav class="orebro-nav" id="orebro-main-nav" aria-label="Huvudmeny">
+      <a href="/#vi-koper">Vi köper</a>
+      <a href="/#sa-fungerar-det">Så fungerar det</a>
+      <a href="/#omrade">Vårt område</a>
+      <a href="/#faq">Vanliga frågor</a>
+      <a class="orebro-facebook"
+         href="https://www.facebook.com/profile.php?id=61592291616762"
+         target="_blank"
+         rel="noopener">Facebook</a>
+      <a class="orebro-contact" href="tel:0727483256">Ring oss</a>
+    </nav>
+  </div>
+
+  <script>
+    (function(){
+      const header = document.currentScript.closest(".orebro-site-header");
+      if(!header) return;
+
+      const button = header.querySelector(".orebro-menu-button");
+      const nav = header.querySelector(".orebro-nav");
+
+      if(!button || !nav) return;
+
+      button.addEventListener("click", function(){
+        const open = nav.classList.toggle("is-open");
+        button.setAttribute("aria-expanded", open ? "true" : "false");
+        button.setAttribute("aria-label", open ? "Stäng meny" : "Öppna meny");
+        button.textContent = open ? "×" : "☰";
+      });
+
+      nav.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click", function(){
+          nav.classList.remove("is-open");
+          button.setAttribute("aria-expanded","false");
+          button.setAttribute("aria-label","Öppna meny");
+          button.textContent = "☰";
+        });
+      });
+    })();
+  </script>
+</header>
