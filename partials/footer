@@ -1,0 +1,222 @@
+<footer class="orebro-site-footer">
+  <style>
+    .orebro-site-footer{
+      background:#0f1a12;
+      color:#dfe8e0;
+      padding:48px 0 22px;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    }
+
+    .orebro-footer-wrap{
+      width:min(100% - 40px,1160px);
+      margin-inline:auto;
+    }
+
+    .orebro-footer-grid{
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:42px;
+    }
+
+    .orebro-site-footer h2,
+    .orebro-site-footer h3{
+      margin:0 0 13px;
+      color:#fff;
+      line-height:1.2;
+    }
+
+    .orebro-site-footer h2{
+      font-size:20px;
+    }
+
+    .orebro-site-footer h3{
+      font-size:15px;
+    }
+
+    .orebro-site-footer p{
+      max-width:48ch;
+      margin:0;
+      color:#aebdb1;
+      line-height:1.7;
+      font-size:14px;
+    }
+
+    .orebro-footer-values{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:17px;
+    }
+
+    .orebro-footer-values span{
+      padding:6px 9px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:999px;
+      color:#cbd8cd;
+      font-size:11px;
+      font-weight:750;
+    }
+
+    .orebro-site-footer ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:9px;
+    }
+
+    .orebro-site-footer a{
+      color:#dce6de;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .orebro-site-footer a:hover,
+    .orebro-site-footer a:focus-visible{
+      color:#fff;
+      text-decoration:underline;
+      outline:none;
+    }
+
+    .orebro-footer-phone{
+      font-weight:850;
+      font-size:16px !important;
+    }
+
+    .orebro-footer-note{
+      margin-top:9px !important;
+      font-size:12px !important;
+      color:#8fa092 !important;
+    }
+
+    .orebro-footer-bottom{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      margin-top:36px;
+      padding-top:19px;
+      border-top:1px solid rgba(255,255,255,.1);
+      color:#85968a;
+      font-size:12px;
+    }
+
+    .orebro-footer-bottom a{
+      color:#aebdb1;
+      font-size:12px;
+    }
+
+    @media(max-width:800px){
+      .orebro-footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .orebro-footer-about{
+        grid-column:1 / -1;
+      }
+    }
+
+    @media(max-width:560px){
+      .orebro-site-footer{
+        padding-top:38px;
+      }
+
+      .orebro-footer-wrap{
+        width:min(100% - 28px,1160px);
+      }
+
+      .orebro-footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .orebro-footer-about{
+        grid-column:auto;
+      }
+
+      .orebro-footer-bottom{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+      }
+    }
+  </style>
+
+  <div class="orebro-footer-wrap">
+    <div class="orebro-footer-grid">
+
+      <section class="orebro-footer-about" aria-labelledby="orebro-footer-title">
+        <h2 id="orebro-footer-title">Örebro Maskin &amp; Återbruk</h2>
+        <p>
+          Vi köper maskiner, redskap, reservdelar, verktyg och andra
+          återbruksobjekt i Örebro med omnejd. Även äldre, trasiga och
+          ofullständiga objekt kan vara intressanta.
+        </p>
+
+        <div class="orebro-footer-values" aria-label="Våra värden">
+          <span>Pålitliga</span>
+          <span>Arbetsvilliga</span>
+          <span>Drivna</span>
+        </div>
+      </section>
+
+      <section aria-labelledby="orebro-footer-contact">
+        <h3 id="orebro-footer-contact">Kontakt</h3>
+        <ul>
+          <li>
+            <a class="orebro-footer-phone" href="tel:0727483256">
+              072-748 32 56
+            </a>
+          </li>
+          <li>
+            <a href="sms:0727483256">Skicka SMS</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61592291616762"
+               target="_blank"
+               rel="noopener">
+              Facebook
+            </a>
+          </li>
+        </ul>
+
+        <p class="orebro-footer-note">
+          Om vi inte svarar när du ringer får du gärna skicka ett SMS med ditt ärende.
+        </p>
+      </section>
+
+      <section aria-labelledby="orebro-footer-links">
+        <h3 id="orebro-footer-links">Snabblänkar</h3>
+        <ul>
+          <li><a href="/#vi-koper">Vad vi köper</a></li>
+          <li><a href="/#sa-fungerar-det">Så fungerar det</a></li>
+          <li><a href="/#omrade">Vårt område</a></li>
+          <li><a href="/#faq">Vanliga frågor</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="orebro-footer-bottom">
+      <span>
+        © <span class="orebro-footer-year"></span> Örebro Maskin &amp; Återbruk
+      </span>
+
+      <span>
+        Lokalt • personligt • återbruk
+      </span>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const footer = document.currentScript.closest(".orebro-site-footer");
+      if(!footer) return;
+
+      const year = footer.querySelector(".orebro-footer-year");
+      if(year){
+        year.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</footer>
