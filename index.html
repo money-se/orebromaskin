@@ -4,70 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Köpa & sälja maskiner i Örebro | Örebro Maskin & Återbruk</title>
-
-  <meta name="description"
-        content="Örebro Maskin & Återbruk köper maskiner, gräsklippare, åkgräsklippare och andra objekt i Örebro med omnejd. Även trasiga maskiner kan ha värde. Hämtning kan ordnas.">
-
-  <meta name="robots" content="index,follow">
-
+  <title>Sälja maskiner i Örebro | Örebro Maskin & Återbruk</title>
+  <meta name="description" content="Har du maskiner, gräsklippare, traktorer, redskap, reservdelar, verktyg eller andra återbruksobjekt du vill sälja i Örebro med omnejd? Skicka bilder för en första bedömning.">
   <link rel="canonical" href="https://orebromaskin.se/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#1f3322">
 
-  <!-- Facebook / Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Örebro Maskin & Återbruk">
-  <meta property="og:description"
-        content="Vi köper maskiner – även trasiga. Skicka bilder för en snabb bedömning.">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Sälja maskiner i Örebro | Örebro Maskin & Återbruk">
+  <meta property="og:description" content="Vi köper maskiner, redskap, reservdelar och andra återbruksobjekt i Örebro med omnejd. Även trasiga och äldre objekt kan vara intressanta.">
   <meta property="og:url" content="https://orebromaskin.se/">
+  <meta property="og:site_name" content="Örebro Maskin & Återbruk">
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Örebro Maskin & Återbruk",
-    "url": "https://orebromaskin.se/",
-    "telephone": "+46727483256",
-    "description": "Örebro Maskin & Återbruk köper maskiner, trädgårdsmaskiner, reservdelsobjekt och andra maskinrelaterade objekt i Örebro med omnejd. Även trasiga maskiner kan ha värde.",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61592291616762"
-    ],
-    "areaServed": [
+    "@context":"https://schema.org",
+    "@graph":[
       {
-        "@type": "City",
-        "name": "Örebro"
+        "@type":"LocalBusiness",
+        "@id":"https://orebromaskin.se/#business",
+        "name":"Örebro Maskin & Återbruk",
+        "url":"https://orebromaskin.se/",
+        "telephone":"+46727483256",
+        "description":"Lokalt inköp av begagnade maskiner, gräsklippare, traktorer, redskap, reservdelar, verktyg och andra återbruksobjekt i Örebro med omnejd.",
+        "areaServed":[
+          {"@type":"City","name":"Örebro"},
+          {"@type":"City","name":"Kumla"},
+          {"@type":"City","name":"Hallsberg"},
+          {"@type":"City","name":"Pålsboda"},
+          {"@type":"City","name":"Laxå"},
+          {"@type":"City","name":"Askersund"},
+          {"@type":"City","name":"Nora"},
+          {"@type":"City","name":"Lindesberg"}
+        ],
+        "sameAs":[
+          "https://www.facebook.com/profile.php?id=61592291616762"
+        ]
       },
       {
-        "@type": "City",
-        "name": "Kumla"
+        "@type":"WebSite",
+        "@id":"https://orebromaskin.se/#website",
+        "url":"https://orebromaskin.se/",
+        "name":"Örebro Maskin & Återbruk",
+        "publisher":{"@id":"https://orebromaskin.se/#business"},
+        "inLanguage":"sv-SE"
       },
       {
-        "@type": "City",
-        "name": "Hallsberg"
-      },
-      {
-        "@type": "City",
-        "name": "Pålsboda"
-      },
-      {
-        "@type": "City",
-        "name": "Askersund"
-      },
-      {
-        "@type": "City",
-        "name": "Laxå"
-      },
-      {
-        "@type": "City",
-        "name": "Nora"
-      },
-      {
-        "@type": "City",
-        "name": "Lindesberg"
-      },
-      {
-        "@type": "City",
-        "name": "Karlskoga"
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Vad köper ni i Örebro?",
+            "acceptedAnswer":{"@type":"Answer","text":"Vi tittar bland annat på gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, redskap, motorer, reservdelar, verktyg och andra återbruksobjekt. Skicka gärna bilder även om du är osäker."}
+          },
+          {
+            "@type":"Question",
+            "name":"Köper ni trasiga maskiner?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ja. Trasiga, ofullständiga och stillastående maskiner kan fortfarande vara intressanta för reparation, reservdelar eller återbruk."}
+          },
+          {
+            "@type":"Question",
+            "name":"Kan ni hämta det ni köper?",
+            "acceptedAnswer":{"@type":"Answer","text":"Transport kan ordnas efter överenskommelse för objekt eller partier som vi köper, beroende på plats, omfattning och praktiska förutsättningar."}
+          },
+          {
+            "@type":"Question",
+            "name":"Hur får jag en bedömning?",
+            "acceptedAnswer":{"@type":"Answer","text":"Skicka några tydliga bilder, ort, kort information om skicket samt gärna märke och modell om du vet."}
+          }
+        ]
       }
     ]
   }
@@ -75,1553 +81,451 @@
 
   <style>
     :root{
-      --brand:#1f2d1f;
-      --brand-2:#2c422e;
-      --brand-3:#152117;
-      --bg:#f4f6f4;
+      --brand:#1f3322;
+      --brand-dark:#142317;
+      --brand-mid:#2b4930;
+      --soft:#eaf1ea;
+      --accent:#d8a52e;
+      --bg:#f6f7f4;
       --card:#ffffff;
-      --text:#111a13;
-      --muted:#617064;
-      --line:#e1e7e1;
-      --accent:#dce9dc;
-      --facebook:#1877f2;
+      --text:#142017;
+      --muted:#5f6d62;
+      --line:#dfe6df;
       --radius:20px;
-      --shadow:0 14px 36px rgba(0,0,0,.07);
-      --max:1140px;
+      --radius-sm:14px;
+      --shadow:0 16px 42px rgba(20,35,23,.09);
+      --max:1160px;
     }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit}
+    img{max-width:100%}
+    .wrap{width:min(100% - 40px,var(--max));margin-inline:auto}
+    .skip-link{position:absolute;left:12px;top:-60px;z-index:9999;padding:10px 14px;background:#fff;border-radius:9px;font-weight:800}
+    .skip-link:focus{top:12px}
 
-    *{
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.65;
-    }
-
-    a{
-      color:inherit;
-    }
-
-    img{
-      max-width:100%;
-    }
-
-    .wrap{
-      width:100%;
-      max-width:var(--max);
-      margin:0 auto;
-      padding:0 20px;
-    }
-
-    /* =========================
-       HEADER
-    ========================== */
-
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:1000;
-      background:rgba(255,255,255,.94);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--line);
-    }
-
-    .topbar-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:22px;
-      min-height:72px;
-    }
-
-    .logo{
-      text-decoration:none;
-      font-size:17px;
-      font-weight:950;
-      letter-spacing:.5px;
-      line-height:1.15;
-    }
-
-    .logo span{
-      display:block;
-      margin-top:4px;
-      color:var(--muted);
-      font-size:11px;
-      font-weight:600;
-      letter-spacing:.15px;
-    }
-
-    nav{
-      display:flex;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:5px;
-      font-size:14px;
-      font-weight:650;
-    }
-
-    nav a{
-      padding:9px 10px;
-      text-decoration:none;
-      border-radius:10px;
-    }
-
-    nav a:hover{
-      background:#edf2ed;
-    }
-
-    .nav-contact{
-      background:var(--brand);
-      color:white;
-    }
-
-    .nav-contact:hover{
-      background:var(--brand-2);
-    }
-
-    /* =========================
-       HERO
-    ========================== */
+    .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+    .brand{text-decoration:none;font-weight:950;letter-spacing:.02em;line-height:1.15}
+    .brand span{display:block;margin-top:4px;color:var(--muted);font-size:11px;font-weight:650}
+    nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    nav a{padding:8px 10px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:750}
+    nav a:hover{background:var(--soft)}
+    .nav-cta{background:var(--brand-dark);color:#fff!important}
 
     .hero{
       position:relative;
       overflow:hidden;
+      color:#fff;
+      padding:82px 0 70px;
       background:
-        radial-gradient(
-          circle at 80% 20%,
-          rgba(255,255,255,.08),
-          transparent 34%
-        ),
-        linear-gradient(
-          135deg,
-          var(--brand-3),
-          var(--brand)
-        );
-      color:white;
-      padding:78px 0 64px;
-    }
-
-    .hero::after{
-      content:"";
-      position:absolute;
-      right:-120px;
-      bottom:-180px;
-      width:480px;
-      height:480px;
-      border-radius:50%;
-      background:rgba(255,255,255,.035);
-    }
-
-    .hero-grid{
-      position:relative;
-      z-index:2;
-      display:grid;
-      grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
-      align-items:center;
-      gap:50px;
-    }
-
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:7px 11px;
-      margin-bottom:18px;
-      border:1px solid rgba(255,255,255,.16);
-      border-radius:999px;
-      background:rgba(255,255,255,.07);
-      font-size:13px;
-      font-weight:750;
-    }
-
-    .hero h1{
-      max-width:760px;
-      margin:0;
-      font-size:clamp(38px,6vw,66px);
-      line-height:1.02;
-      letter-spacing:-1.8px;
-    }
-
-    .hero h1 span{
-      color:#cfe1cf;
-    }
-
-    .hero-lead{
-      max-width:660px;
-      margin:22px 0 0;
-      font-size:18px;
-      color:rgba(255,255,255,.88);
-    }
-
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:11px;
-      margin-top:28px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      min-height:48px;
-      padding:12px 17px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:800;
-      transition:
-        transform .15s ease,
-        box-shadow .15s ease,
-        filter .15s ease;
-    }
-
-    .btn:hover{
-      transform:translateY(-1px);
-    }
-
-    .btn-light{
-      background:white;
-      color:var(--brand);
-      box-shadow:0 12px 30px rgba(0,0,0,.14);
-    }
-
-    .btn-ghost{
-      color:white;
-      border:1px solid rgba(255,255,255,.23);
-      background:rgba(255,255,255,.08);
-    }
-
-    .btn-dark{
-      background:var(--brand);
-      color:white;
-    }
-
-    .btn-facebook{
-      background:var(--facebook);
-      color:white;
-    }
-
-    .hero-points{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:25px;
-    }
-
-    .hero-point{
-      padding:7px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.11);
-      font-size:12px;
-      font-weight:700;
-    }
-
-    /* =========================
-       HERO CONTACT CARD
-    ========================== */
-
-    .hero-card{
-      background:white;
-      color:var(--text);
-      border-radius:24px;
-      padding:26px;
-      box-shadow:0 25px 60px rgba(0,0,0,.20);
-    }
-
-    .hero-card-label{
-      color:var(--muted);
-      font-size:12px;
-      font-weight:850;
-      text-transform:uppercase;
-      letter-spacing:.8px;
-    }
-
-    .hero-card h2{
-      margin:6px 0 7px;
-      font-size:24px;
-      line-height:1.2;
-    }
-
-    .hero-card p{
-      margin:0;
-      color:var(--muted);
-    }
-
-    .contact-steps{
-      display:grid;
-      gap:11px;
-      margin:22px 0;
-    }
-
-    .contact-step{
-      display:grid;
-      grid-template-columns:38px 1fr;
-      align-items:start;
-      gap:10px;
-    }
-
-    .step-number{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:36px;
-      height:36px;
-      border-radius:10px;
-      background:#edf3ed;
-      color:var(--brand);
-      font-size:14px;
-      font-weight:900;
-    }
-
-    .contact-step strong{
-      display:block;
-    }
-
-    .contact-step span{
-      display:block;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .hero-card-actions{
-      display:grid;
-      gap:9px;
-    }
-
-    .hero-card-actions .btn{
-      width:100%;
-    }
-
-    .fineprint{
-      margin-top:12px !important;
-      font-size:12px;
-      text-align:center;
-    }
-
-    /* =========================
-       GENERAL
-    ========================== */
-
-    section{
-      padding:62px 0;
-    }
-
-    .section-heading{
-      max-width:720px;
-      margin-bottom:28px;
-    }
-
-    .section-heading.center{
-      margin-left:auto;
-      margin-right:auto;
-      text-align:center;
-    }
-
-    .section-label{
-      margin-bottom:5px;
-      color:#49604d;
-      font-size:12px;
-      font-weight:900;
-      text-transform:uppercase;
-      letter-spacing:1px;
-    }
-
-    .section-heading h2{
-      margin:0;
-      font-size:clamp(28px,4vw,40px);
-      line-height:1.12;
-      letter-spacing:-.7px;
-    }
-
-    .section-heading p{
-      margin:12px 0 0;
-      color:var(--muted);
-      font-size:16px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:16px;
-    }
-
-    .span-12{
-      grid-column:span 12;
-    }
-
-    .span-8{
-      grid-column:span 8;
-    }
-
-    .span-6{
-      grid-column:span 6;
-    }
-
-    .span-4{
-      grid-column:span 4;
-    }
-
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:25px;
-    }
-
-    .card h3{
-      margin:0 0 8px;
-      font-size:19px;
-      line-height:1.25;
-    }
-
-    .card p{
-      margin:0;
-      color:var(--muted);
-    }
-
-    .card ul{
-      margin:14px 0 0;
-      padding-left:18px;
-      color:var(--muted);
-    }
-
-    .card li{
-      margin:5px 0;
-    }
-
-    /* =========================
-       WHAT WE BUY
-    ========================== */
-
-    .buy-card{
-      min-height:220px;
-    }
-
-    .icon{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:45px;
-      height:45px;
-      margin-bottom:18px;
-      border-radius:13px;
-      background:#edf3ed;
-      font-size:22px;
-    }
-
-    .highlight-card{
-      border-left:6px solid var(--brand);
-      background:#f1f5f1;
-    }
-
-    /* =========================
-       PROCESS
-    ========================== */
-
-    .process-section{
-      background:white;
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-    }
-
-    .process{
-      counter-reset:process-counter;
-    }
-
-    .process-card{
-      position:relative;
-      counter-increment:process-counter;
-    }
-
-    .process-card::before{
-      content:counter(process-counter);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:39px;
-      height:39px;
-      margin-bottom:15px;
-      border-radius:50%;
-      background:var(--brand);
-      color:white;
-      font-weight:900;
-    }
-
-    /* =========================
-       BROKEN MACHINES
-    ========================== */
-
-    .broken{
-      background:
-        linear-gradient(
-          135deg,
-          #e7efe7,
-          #f4f7f4
-        );
-    }
-
-    .broken-inner{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:35px;
-      align-items:center;
-    }
-
-    .broken-copy h2{
-      margin:0;
-      font-size:38px;
-      line-height:1.1;
-    }
-
-    .broken-copy p{
-      margin:15px 0 0;
-      color:var(--muted);
-    }
-
-    .checklist{
-      display:grid;
-      gap:10px;
-      margin-top:20px;
-    }
-
-    .check{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-    }
-
-    .checkmark{
-      flex:0 0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:23px;
-      height:23px;
-      margin-top:2px;
-      border-radius:50%;
-      background:var(--brand);
-      color:white;
-      font-size:12px;
-      font-weight:900;
-    }
-
-    /* =========================
-       BUSINESS
-    ========================== */
-
-    .business-card{
-      padding:34px;
-      background:
-        linear-gradient(
-          135deg,
-          var(--brand),
-          var(--brand-2)
-        );
-      color:white;
-      border:none;
-    }
-
-    .business-card h2{
-      margin:0;
-      font-size:32px;
-      line-height:1.15;
-    }
-
-    .business-card p{
-      margin-top:13px;
-      color:rgba(255,255,255,.83);
-    }
-
-    /* =========================
-       AREAS
-    ========================== */
-
-    .areas{
-      display:flex;
-      flex-wrap:wrap;
-      gap:9px;
-    }
-
-    .area{
-      padding:9px 13px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background:white;
-      font-size:14px;
-      font-weight:700;
-    }
-
-    /* =========================
-       FINAL CTA
-    ========================== */
-
-    .final-cta{
-      padding:70px 0;
-      background:var(--brand-3);
-      color:white;
-      text-align:center;
-    }
-
-    .final-cta-inner{
-      max-width:760px;
-      margin:auto;
-    }
-
-    .final-cta h2{
-      margin:0;
-      font-size:clamp(31px,5vw,48px);
-      line-height:1.08;
-      letter-spacing:-1px;
-    }
-
-    .final-cta p{
-      margin:16px auto 0;
-      max-width:620px;
-      color:rgba(255,255,255,.82);
-      font-size:17px;
-    }
-
-    .final-actions{
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:25px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer{
-      padding:30px 0;
-      background:white;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .footer-inner{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:12px;
-    }
-
-    .footer-name{
-      color:var(--text);
-      font-weight:850;
-    }
-
-    footer a{
-      text-decoration:none;
-    }
-
-    footer a:hover{
-      text-decoration:underline;
-    }
-
-    /* =========================
-       MOBILE
-    ========================== */
+        radial-gradient(circle at 88% 16%,rgba(216,165,46,.18),transparent 30%),
+        radial-gradient(circle at 8% 95%,rgba(255,255,255,.06),transparent 32%),
+        linear-gradient(140deg,var(--brand-dark),var(--brand-mid));
+    }
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(310px,.75fr);gap:46px;align-items:center}
+    .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:15px;color:#f0c45e;font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--accent)}
+    h1,h2,h3{line-height:1.13;letter-spacing:-.025em;text-wrap:balance}
+    h1{margin:0 0 20px;font-size:clamp(2.65rem,6vw,4.9rem);max-width:13ch}
+    h2{margin:0 0 14px;font-size:clamp(2rem,4vw,3.15rem)}
+    h3{margin:0 0 10px;font-size:1.23rem}
+    .lead{margin:0;max-width:720px;color:#dbe7dd;font-size:clamp(1.05rem,2vw,1.2rem)}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:850;border:1px solid transparent;transition:.15s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--accent);color:#182018}
+    .btn-secondary{border-color:rgba(255,255,255,.34);color:#fff;background:rgba(255,255,255,.06)}
+    .btn-dark{background:var(--brand-dark);color:#fff}
+    .btn-light{background:#fff;color:var(--brand-dark);border-color:#cad6cb}
+
+    .hero-card{padding:29px;border:1px solid rgba(255,255,255,.13);border-radius:var(--radius);background:rgba(8,19,11,.55);box-shadow:0 20px 55px rgba(0,0,0,.2);backdrop-filter:blur(7px)}
+    .hero-card h2{font-size:1.55rem}
+    .hero-card p{margin:0;color:#cfdbd1}
+    .check-list{list-style:none;padding:0;margin:19px 0 0;display:grid;gap:11px}
+    .check-list li{display:grid;grid-template-columns:25px 1fr;gap:10px}
+    .check-list li:before{content:"✓";display:grid;place-items:center;width:23px;height:23px;border-radius:50%;background:rgba(216,165,46,.18);color:#f3c75d;font-weight:900}
+
+    section{padding:76px 0}
+    .section-white{background:#fff}
+    .section-soft{background:var(--soft)}
+    .section-dark{background:var(--brand-dark);color:#fff}
+    .section-head{max-width:770px;margin-bottom:30px}
+    .kicker{margin:0 0 9px;color:#7b5b13;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .section-head p{margin:0;color:var(--muted);font-size:17px}
+    .section-dark .section-head p{color:#cbd8cd}
+    .section-dark .kicker{color:#efc25c}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .s3{grid-column:span 3}.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}.s12{grid-column:span 12}
+    .card{height:100%;padding:25px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:0 10px 28px rgba(20,35,23,.055)}
+    .card p{margin:0;color:var(--muted)}
+    .card p+p{margin-top:13px}
+    .card ul{margin:14px 0 0;padding-left:20px;color:var(--muted)}
+    .card li{margin:7px 0}
+    .icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:16px;border-radius:13px;background:var(--soft);font-size:23px}
+
+    .feature{padding:30px;border-radius:24px;background:linear-gradient(135deg,var(--brand),var(--brand-mid));color:#fff;box-shadow:var(--shadow)}
+    .feature h3{font-size:1.7rem}
+    .feature p{margin:0;color:#d6e1d8}
+    .feature p+p{margin-top:12px}
+
+    .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .step{padding:23px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .step-number{width:39px;height:39px;display:grid;place-items:center;margin-bottom:14px;border-radius:50%;background:var(--brand-dark);color:#fff;font-weight:900}
+    .step p{margin:0;color:var(--muted)}
+
+    .area-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .area-tags span{padding:9px 13px;background:#fff;border:1px solid var(--line);border-radius:999px;color:var(--brand-dark);font-weight:800}
+
+    details{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    details+details{margin-top:11px}
+    summary{cursor:pointer;list-style:none;padding:19px 54px 19px 21px;font-weight:850;position:relative}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";position:absolute;right:19px;top:50%;transform:translateY(-50%);width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--soft)}
+    details[open] summary:after{content:"−"}
+    .answer{padding:0 21px 20px;border-top:1px solid var(--line);color:var(--muted)}
+    .answer p{margin:16px 0 0}
+
+    .cta{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:31px;border-radius:24px;background:var(--brand-dark);color:#fff;box-shadow:var(--shadow)}
+    .cta h2{font-size:2rem}
+    .cta p{margin:0;color:#cbd8cd}
+
+    footer{background:#0f1a12;color:#dfe8e0;padding:40px 0 22px}
+    .footer-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:30px}
+    footer h3{color:#fff;font-size:1rem}
+    footer p{color:#aebdb1;margin:0}
+    footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    footer a{color:#dce6de;text-decoration:none}
+    footer a:hover{text-decoration:underline}
+    .footer-bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);color:#85968a;font-size:12px}
 
     @media(max-width:900px){
-
-      .topbar-inner{
-        align-items:flex-start;
-        flex-direction:column;
-        padding:14px 0;
-      }
-
-      nav{
-        width:100%;
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        padding-bottom:3px;
-      }
-
-      nav a{
-        white-space:nowrap;
-      }
-
-      .hero{
-        padding:55px 0 45px;
-      }
-
-      .hero-grid{
-        grid-template-columns:1fr;
-        gap:30px;
-      }
-
-      .hero h1{
-        letter-spacing:-1px;
-      }
-
-      .broken-inner{
-        grid-template-columns:1fr;
-      }
-
-      .span-8,
-      .span-6,
-      .span-4{
-        grid-column:span 12;
-      }
-
+      .hero-grid{grid-template-columns:1fr}
+      .s3,.s4,.s5,.s6,.s7,.s8{grid-column:span 12}
+      .steps{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      nav a:not(.nav-cta){display:none}
     }
-
-    @media(max-width:560px){
-
-      .wrap{
-        padding:0 16px;
-      }
-
-      section{
-        padding:48px 0;
-      }
-
-      .hero-actions{
-        display:grid;
-      }
-
-      .hero-actions .btn{
-        width:100%;
-      }
-
-      .hero-card{
-        padding:21px;
-      }
-
-      .card{
-        padding:21px;
-      }
-
-      .business-card{
-        padding:25px;
-      }
-
-      .final-actions{
-        display:grid;
-      }
-
-      .final-actions .btn{
-        width:100%;
-      }
-
+    @media(max-width:600px){
+      .hero{padding:56px 0 48px}
+      section{padding:52px 0}
+      .steps{grid-template-columns:1fr}
+      .actions,.cta{flex-direction:column;align-items:stretch}
+      .btn{width:100%}
+      .cta{align-items:flex-start}
+      .footer-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
 
-<!-- =========================
-     HEADER
-========================== -->
+<div id="site-header"></div>
 
-<header class="topbar">
+<main id="main">
 
-  <div class="wrap topbar-inner">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Vi köper i Örebro med omnejd</div>
+        <h1>Har du något du vill sälja?</h1>
+        <p class="lead">
+          Örebro Maskin &amp; Återbruk köper maskiner, gräsklippare, traktorer,
+          redskap, reservdelar, verktyg och andra återbruksobjekt från privatpersoner,
+          företag och lantbruk. Även trasigt, äldre och ofullständigt kan vara intressant.
+        </p>
 
-    <a class="logo" href="/">
-      ÖREBRO MASKIN &amp; ÅTERBRUK
-
-      <span>
-        Vi köper och tar tillvara maskiner
-      </span>
-    </a>
-
-    <nav aria-label="Huvudmeny">
-
-      <a href="#vi-koper">
-        Vi köper
-      </a>
-
-      <a href="#sa-funkar-det">
-        Så funkar det
-      </a>
-
-      <a href="#foretag">
-        Företag
-      </a>
-
-      <a href="#omrade">
-        Område
-      </a>
-
-      <a
-        class="nav-contact"
-        href="#kontakt">
-        Kontakt
-      </a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-<!-- =========================
-     HERO
-========================== -->
-
-<section class="hero">
-
-  <div class="wrap hero-grid">
-
-    <div>
-
-      <div class="eyebrow">
-        📍 Örebro med omnejd
+        <div class="actions">
+          <a class="btn btn-primary" href="sms:0727483256">Skicka bilder via SMS</a>
+          <a class="btn btn-secondary" href="tel:0727483256">Ring 072-748 32 56</a>
+        </div>
       </div>
 
-      <h1>
-        Har du en maskin som
-        <span>bara står?</span>
-      </h1>
-
-      <p class="hero-lead">
-
-        Örebro Maskin &amp; Återbruk köper
-        gräsklippare, åkgräsklippare,
-        trädgårdsmaskiner och andra
-        maskinrelaterade objekt.
-
-        <strong>
-          Även trasiga maskiner kan ha värde.
-        </strong>
-
-      </p>
-
-      <div class="hero-actions">
-
-        <a
-          class="btn btn-light"
-          href="https://www.facebook.com/profile.php?id=61592291616762"
-          target="_blank"
-          rel="noopener">
-
-          📷 Skicka bilder
-
-        </a>
-
-        <a
-          class="btn btn-ghost"
-          href="tel:0727483256">
-
-          📞 Ring 072-748 32 56
-
-        </a>
-
-      </div>
-
-      <div class="hero-points">
-
-        <div class="hero-point">
-          ✓ Även trasigt
-        </div>
-
-        <div class="hero-point">
-          ✓ Snabb bedömning
-        </div>
-
-        <div class="hero-point">
-          ✓ Hämtning kan ordnas
-        </div>
-
-        <div class="hero-point">
-          ✓ Återbruk först
-        </div>
-
-      </div>
-
+      <aside class="hero-card">
+        <h2>Snabbaste vägen till ett besked</h2>
+        <p>Skicka några bilder tillsammans med:</p>
+        <ul class="check-list">
+          <li>Var objektet finns</li>
+          <li>Kort information om skicket</li>
+          <li>Märke och modell om du vet</li>
+          <li>Gärna vad du tänkt dig i pris</li>
+        </ul>
+      </aside>
     </div>
+  </section>
 
-    <div class="hero-card">
-
-      <div class="hero-card-label">
-        Snabb bedömning
+  <section id="vi-koper" class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Vad vi köper</p>
+        <h2>Från en enda maskin till ett helt blandat parti</h2>
+        <p>
+          Vårt intresse är brett. Listan nedan är exempel – hittar du inte det du har,
+          skicka gärna bilder ändå så tittar vi på det.
+        </p>
       </div>
-
-      <h2>
-        Skicka bilder på det du vill sälja
-      </h2>
-
-      <p>
-        Vi behöver inte en lång beskrivning.
-        Några bilder och grundläggande information
-        räcker oftast för en första bedömning.
-      </p>
-
-      <div class="contact-steps">
-
-        <div class="contact-step">
-
-          <div class="step-number">
-            1
-          </div>
-
-          <div>
-            <strong>Ta några bilder</strong>
-
-            <span>
-              Helbild och gärna modellskylt om den finns.
-            </span>
-          </div>
-
-        </div>
-
-        <div class="contact-step">
-
-          <div class="step-number">
-            2
-          </div>
-
-          <div>
-            <strong>Skriv ort och skick</strong>
-
-            <span>
-              Exempel: startar, startar inte eller okänd status.
-            </span>
-          </div>
-
-        </div>
-
-        <div class="contact-step">
-
-          <div class="step-number">
-            3
-          </div>
-
-          <div>
-            <strong>Vi återkommer</strong>
-
-            <span>
-              Vid intresse kommer vi överens om pris och upplägg.
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="hero-card-actions">
-
-        <a
-          class="btn btn-facebook"
-          href="https://www.facebook.com/profile.php?id=61592291616762"
-          target="_blank"
-          rel="noopener">
-
-          Kontakta oss på Facebook
-
-        </a>
-
-        <a
-          class="btn btn-dark"
-          href="tel:0727483256">
-
-          Ring oss
-
-        </a>
-
-      </div>
-
-      <p class="fineprint">
-        Snabbast svar: 1–3 bilder + ort + kort info.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     VI KÖPER
-========================== -->
-
-<section id="vi-koper">
-
-  <div class="wrap">
-
-    <div class="section-heading">
-
-      <div class="section-label">
-        Vad vi söker
-      </div>
-
-      <h2>
-        Vi köper maskiner och objekt
-        som blivit stående
-      </h2>
-
-      <p>
-        Fungerande maskiner är intressanta,
-        men även äldre, trasiga eller
-        ofullständiga objekt kan ha värde.
-      </p>
-
-    </div>
-
-    <div class="grid">
-
-      <article class="card buy-card span-4">
-
-        <div class="icon">
-          🌱
-        </div>
-
-        <h3>
-          Gräsklippare
-        </h3>
-
-        <p>
-          Vanliga gräsklippare,
-          äldre modeller och maskiner
-          som behöver reparation.
-        </p>
-
-      </article>
-
-      <article class="card buy-card span-4">
-
-        <div class="icon">
-          🚜
-        </div>
-
-        <h3>
-          Åkgräsklippare
-        </h3>
-
-        <p>
-          Rider, frontklippare,
-          trädgårdstraktorer och
-          reservdelsmaskiner.
-        </p>
-
-      </article>
-
-      <article class="card buy-card span-4">
-
-        <div class="icon">
-          ⚙️
-        </div>
-
-        <h3>
-          Maskiner &amp; delar
-        </h3>
-
-        <p>
-          Motorer, reservdelar,
-          mindre maskiner och annan
-          maskinrelaterad utrustning.
-        </p>
-
-      </article>
-
-      <article class="card span-6">
-
-        <div class="icon">
-          🔧
-        </div>
-
-        <h3>
-          Trasigt är också intressant
-        </h3>
-
-        <p>
-          En maskin behöver inte fungera
-          för att ha värde.
-
-          Motorer, växellådor, klippbord
-          och andra delar kan ofta
-          användas igen.
-        </p>
-
-      </article>
-
-      <article class="card span-6">
-
-        <div class="icon">
-          📦
-        </div>
-
-        <h3>
-          Flera objekt eller större partier
-        </h3>
-
-        <p>
-          Har du flera maskiner,
-          delar, verktyg eller utrustning
-          som blivit stående?
-
-          Skicka gärna bilder på helheten.
-        </p>
-
-      </article>
-
-      <article class="card highlight-card span-12">
-
-        <h3>
-          Osäker på om vi är intresserade?
-        </h3>
-
-        <p>
-          Skicka några bilder ändå.
-
-          Det är betydligt enklare för oss
-          att bedöma ett objekt från bilder
-          än att du själv behöver avgöra
-          om det har något värde.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     SÅ FUNKAR DET
-========================== -->
-
-<section
-  id="sa-funkar-det"
-  class="process-section">
-
-  <div class="wrap">
-
-    <div class="section-heading center">
-
-      <div class="section-label">
-        Enkelt upplägg
-      </div>
-
-      <h2>
-        Så fungerar det
-      </h2>
-
-      <p>
-        Du slipper skapa annons,
-        svara på mängder av frågor
-        och vänta på rätt köpare.
-      </p>
-
-    </div>
-
-    <div class="grid process">
-
-      <article class="card process-card span-4">
-
-        <h3>
-          Skicka bilder
-        </h3>
-
-        <p>
-          Skicka 1–3 bilder,
-          vilken ort objektet finns i
-          och kort information om skick.
-        </p>
-
-      </article>
-
-      <article class="card process-card span-4">
-
-        <h3>
-          Vi gör en bedömning
-        </h3>
-
-        <p>
-          Vi tittar på objekt,
-          skick, kompletthet och
-          vad som kan återbrukas.
-        </p>
-
-      </article>
-
-      <article class="card process-card span-4">
-
-        <h3>
-          Vi kommer överens
-        </h3>
-
-        <p>
-          Vid intresse kommer vi
-          överens om pris, betalning
-          och eventuell hämtning.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     TRASIGA MASKINER
-========================== -->
-
-<section class="broken">
-
-  <div class="wrap broken-inner">
-
-    <div class="broken-copy">
-
-      <div class="section-label">
-        Innan du slänger den
-      </div>
-
-      <h2>
-        Startar inte betyder inte
-        värdelös
-      </h2>
-
-      <p>
-        Många maskiner som blivit stående
-        går att reparera eller använda
-        som reservdelar.
-
-        Därför är vi även intresserade
-        av objekt som inte fungerar idag.
-      </p>
-
-      <div class="checklist">
-
-        <div class="check">
-
-          <div class="checkmark">
-            ✓
-          </div>
-
-          <div>
-            Maskiner som inte startar
-          </div>
-
-        </div>
-
-        <div class="check">
-
-          <div class="checkmark">
-            ✓
-          </div>
-
-          <div>
-            Objekt som saknar delar
-          </div>
-
-        </div>
-
-        <div class="check">
-
-          <div class="checkmark">
-            ✓
-          </div>
-
-          <div>
-            Maskiner som stått länge
-          </div>
-
-        </div>
-
-        <div class="check">
-
-          <div class="checkmark">
-            ✓
-          </div>
-
-          <div>
-            Reservdels- och reparationsobjekt
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">
-        ♻️
-      </div>
-
-      <h3>
-        Återbruk före kassering
-      </h3>
-
-      <p>
-        Vår grundidé är enkel:
-        ta tillvara det som fortfarande
-        kan användas.
-
-        En gammal maskin kan bli en
-        fungerande maskin igen.
-
-        Om den inte går att rädda
-        kan delar fortfarande komma
-        andra maskiner till nytta.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     FÖRETAG
-========================== -->
-
-<section id="foretag">
-
-  <div class="wrap">
-
-    <div class="business-card card">
 
       <div class="grid">
+        <article class="card s3">
+          <div class="icon">🌱</div>
+          <h3>Gräsklippare</h3>
+          <p>Åkgräsklippare, riders, frontklippare, vanliga gräsklippare och reservdelsmaskiner.</p>
+        </article>
 
-        <div class="span-8">
+        <article class="card s3">
+          <div class="icon">🚜</div>
+          <h3>Maskiner &amp; redskap</h3>
+          <p>Traktorer, jordfräsar, trädgårdsmaskiner, redskap och annan mekanisk utrustning.</p>
+        </article>
 
-          <div
-            class="section-label"
-            style="color:#cbdccb;">
+        <article class="card s3">
+          <div class="icon">⚙️</div>
+          <h3>Motorer &amp; reservdelar</h3>
+          <p>Motorer, växellådor, klippaggregat, hjul, startmotorer och andra maskindelar.</p>
+        </article>
 
-            För företag &amp; verksamheter
+        <article class="card s3">
+          <div class="icon">🔧</div>
+          <h3>Verktyg &amp; återbruk</h3>
+          <p>Verktyg, verkstadsutrustning, lagerpartier och annat som kan få fortsatt användning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          </div>
-
-          <h2>
-            Maskiner och utrustning
-            som bara tar plats?
-          </h2>
-
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="grid">
+        <div class="card s7">
+          <p class="kicker">Även trasigt kan ha värde</p>
+          <h2>Släng inte maskinen innan du frågat</h2>
           <p>
-            Vi är även intresserade
-            av större mängder maskiner,
-            reservdelar, äldre utrustning
-            och maskinrelaterade objekt
-            från företag, verkstäder,
-            lantbruk och andra verksamheter.
+            En maskin som inte startar kan fortfarande innehålla en användbar motor,
+            växellåda, klippaggregat, hjul eller andra delar. Därför tittar vi även på
+            reparationsobjekt, ofullständiga maskiner och sådant som har stått länge.
           </p>
-
+          <p>
+            Vi köper inte allt, men det kostar inget att fråga. Några bilder räcker ofta
+            för att vi ska kunna säga om objektet är intressant för oss.
+          </p>
         </div>
 
-        <div
-          class="span-4"
-          style="
-            display:flex;
-            align-items:center;
-            justify-content:center;
-          ">
-
-          <a
-            class="btn btn-light"
-            href="tel:0727483256">
-
-            Kontakta oss
-
-          </a>
-
+        <div class="feature s5">
+          <h3>Vår idé är enkel</h3>
+          <p>
+            Så mycket som möjligt ska få en ny chans. Det som kan användas igen är ofta
+            mer värt än bara materialet det består av.
+          </p>
+          <p>
+            Därför försöker vi se värdet i maskinen, delarna och användningsmöjligheten
+            innan något räknas bort.
+          </p>
         </div>
-
       </div>
-
     </div>
+  </section>
 
-  </div>
-
-</section>
-
-<!-- =========================
-     OMRÅDE
-========================== -->
-
-<section id="omrade">
-
-  <div class="wrap">
-
-    <div class="section-heading">
-
-      <div class="section-label">
-        Lokalt
+  <section id="sa-fungerar-det" class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Så fungerar det</p>
+        <h2>Enkelt från första bild till eventuell affär</h2>
       </div>
 
-      <h2>
-        Örebro med omnejd
-      </h2>
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <h3>Skicka bilder</h3>
+          <p>Fotografera objektet eller partiet och skicka via SMS.</p>
+        </article>
 
-      <p>
-        Vi arbetar i Örebro och
-        omkringliggande orter.
+        <article class="step">
+          <div class="step-number">2</div>
+          <h3>Vi bedömer</h3>
+          <p>Vi tittar på typ, skick, efterfrågan, reservdelsvärde och omfattning.</p>
+        </article>
 
-        Hämtning bedöms utifrån
-        objekt, mängd och avstånd.
-      </p>
+        <article class="step">
+          <div class="step-number">3</div>
+          <h3>Vi kommer överens</h3>
+          <p>Om vi är intresserade diskuterar vi pris och praktiskt upplägg.</p>
+        </article>
 
+        <article class="step">
+          <div class="step-number">4</div>
+          <h3>Överlämning</h3>
+          <p>Transport kan ordnas efter överenskommelse för objekt som vi köper.</p>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="areas">
-
-      <div class="area">
-        Örebro
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Företag &amp; lantbruk</p>
+        <h2>Har verksamheten utrustning som blivit över?</h2>
+        <p>
+          Vi tar gärna emot förfrågningar från företag, verkstäder, fastighetsägare
+          och lantbruk med maskiner, redskap, verktyg, reservdelar och relevanta partier.
+        </p>
       </div>
 
-      <div class="area">
-        Kumla
+      <div class="grid">
+        <article class="card s4">
+          <h3>Överskottsmaskiner</h3>
+          <p>Maskiner och utrustning som ersatts eller inte längre används.</p>
+        </article>
+        <article class="card s4">
+          <h3>Reservdelar &amp; lager</h3>
+          <p>Motorer, komponenter, äldre reservdelar och blandade maskinrelaterade lager.</p>
+        </article>
+        <article class="card s4">
+          <h3>Större partier</h3>
+          <p>Vid flera objekt räcker några översiktsbilder ofta som första steg.</p>
+        </article>
       </div>
-
-      <div class="area">
-        Hallsberg
-      </div>
-
-      <div class="area">
-        Pålsboda
-      </div>
-
-      <div class="area">
-        Askersund
-      </div>
-
-      <div class="area">
-        Laxå
-      </div>
-
-      <div class="area">
-        Nora
-      </div>
-
-      <div class="area">
-        Lindesberg
-      </div>
-
-      <div class="area">
-        Karlskoga
-      </div>
-
     </div>
+  </section>
 
-  </div>
+  <section id="omrade" class="section-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Vårt område</p>
+        <h2>Örebro med omnejd</h2>
+        <p>
+          Vi utgår från Örebroregionen och bedömer förfrågningar individuellt.
+          Avstånd, objektets värde, omfattning och transportbehov påverkar vilket upplägg som är rimligt.
+        </p>
+      </div>
 
-</section>
-
-<!-- =========================
-     CONTACT CTA
-========================== -->
-
-<section
-  id="kontakt"
-  class="final-cta">
-
-  <div class="wrap final-cta-inner">
-
-    <h2>
-      Har du något stående?
-      Skicka en bild.
-    </h2>
-
-    <p>
-      Du behöver inte veta exakt modell
-      eller vad objektet är värt.
-
-      Skicka bilder, ort och kort information
-      så gör vi en första bedömning.
-    </p>
-
-    <div class="final-actions">
-
-      <a
-        class="btn btn-light"
-        href="https://www.facebook.com/profile.php?id=61592291616762"
-        target="_blank"
-        rel="noopener">
-
-        📷 Skicka bilder på Facebook
-
-      </a>
-
-      <a
-        class="btn btn-ghost"
-        href="tel:0727483256">
-
-        📞 072-748 32 56
-
-      </a>
-
+      <div class="area-tags">
+        <span>Örebro</span>
+        <span>Kumla</span>
+        <span>Hallsberg</span>
+        <span>Pålsboda</span>
+        <span>Askersund</span>
+        <span>Laxå</span>
+        <span>Nora</span>
+        <span>Lindesberg</span>
+        <span>Närliggande områden</span>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <section id="faq" class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Vanliga frågor</p>
+        <h2>Innan du kontaktar oss</h2>
+      </div>
 
-</section>
+      <details>
+        <summary>Köper ni maskiner som inte startar?</summary>
+        <div class="answer">
+          <p>Ja. Trasiga eller ofullständiga maskiner kan fortfarande vara intressanta för reparation, reservdelar eller återbruk.</p>
+        </div>
+      </details>
 
-<!-- =========================
-     FOOTER
-========================== -->
+      <details>
+        <summary>Måste jag veta vad maskinen är värd?</summary>
+        <div class="answer">
+          <p>Nej. Har du ett pris i åtanke får du gärna skriva det, men du kan också skicka bilder först så tar vi dialogen därifrån.</p>
+        </div>
+      </details>
 
-<footer>
+      <details>
+        <summary>Köper ni flera saker på samma gång?</summary>
+        <div class="answer">
+          <p>Ja. Det kan gälla flera maskiner, ett garage, ett förråd, en verkstad eller ett större blandat parti.</p>
+        </div>
+      </details>
 
-  <div class="wrap footer-inner">
-
-    <div>
-
-      <span class="footer-name">
-        Örebro Maskin &amp; Återbruk
-      </span>
-
-      <br>
-
-      © <span id="year"></span>
-
+      <details>
+        <summary>Kan ni hämta det ni köper?</summary>
+        <div class="answer">
+          <p>Transport kan ordnas efter överenskommelse för objekt eller partier som vi köper. Det bedöms från fall till fall.</p>
+        </div>
+      </details>
     </div>
+  </section>
 
-    <div>
-
-      🌐
-      <a href="https://orebromaskin.se">
-        orebromaskin.se
-      </a>
-
-      &nbsp;•&nbsp;
-
-      📘
-      <a
-        href="https://www.facebook.com/profile.php?id=61592291616762"
-        target="_blank"
-        rel="noopener">
-        Facebook
-      </a>
-
-      &nbsp;•&nbsp;
-
-      📞
-      <a href="tel:0727483256">
-        072-748 32 56
-      </a>
-
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>Har du något du vill sälja?</h2>
+          <p>Skicka några bilder, ort och kort information så tittar vi på det.</p>
+        </div>
+        <div class="actions" style="margin-top:0">
+          <a class="btn btn-primary" href="sms:0727483256">Skicka SMS</a>
+          <a class="btn btn-secondary" href="tel:0727483256">Ring oss</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+</main>
 
-</footer>
+<div id="site-footer"></div>
 
 <script>
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
-</script>
+  async function injectPartial(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
 
+    try {
+      const response = await fetch(url, { cache: "no-cache" });
+      if (!response.ok) {
+        throw new Error("Kunde inte ladda " + url + " (" + response.status + ")");
+      }
+
+      const html = await response.text();
+      el.innerHTML = html;
+
+      if (id === "site-header") initHeader();
+      if (id === "site-footer") initFooter();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function initHeader() {
+    const header = document.querySelector(".orebro-site-header");
+    if (!header) return;
+
+    const button = header.querySelector(".orebro-menu-button");
+    const nav = header.querySelector(".orebro-nav");
+
+    if (!button || !nav) return;
+
+    button.addEventListener("click", function () {
+      const open = nav.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+      button.setAttribute("aria-label", open ? "Stäng meny" : "Öppna meny");
+      button.textContent = open ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("is-open");
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-label", "Öppna meny");
+        button.textContent = "☰";
+      });
+    });
+  }
+
+  function initFooter() {
+    const year = document.querySelector(".orebro-footer-year");
+    if (year) year.textContent = new Date().getFullYear();
+  }
+
+  injectPartial("site-header", "partials/header.html");
+  injectPartial("site-footer", "partials/footer.html");
+</script>
 </body>
 </html>
