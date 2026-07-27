@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sälj maskiner i Örebro & Närke | Örebro Maskin & Återbruk</title>
+  <meta name="description" content="Sälj gräsklippare, åkgräsklippare, traktorer, redskap, motorer, reservdelar och andra maskiner till Örebro Maskin & Återbruk. Vi utgår från Pålsboda och köper i Närke, Örebroregionen och längre bort när affären motiverar resan.">
+  <link rel="canonical" href="https://orebromaskin.se/kop-maskiner.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#1f3322">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Sälj maskiner i Örebro & Närke | Örebro Maskin & Återbruk">
+  <meta property="og:description" content="Vi köper maskiner, traktorer, gräsklippare, redskap, motorer och reservdelar. Även trasiga och ofullständiga objekt kan vara intressanta.">
+  <meta property="og:url" content="https://orebromaskin.se/kop-maskiner.html">
+  <meta property="og:site_name" content="Örebro Maskin & Återbruk">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Service",
+        "@id":"https://orebromaskin.se/kop-maskiner.html#service",
+        "name":"Inköp av begagnade maskiner i Örebro och Närke",
+        "url":"https://orebromaskin.se/kop-maskiner.html",
+        "provider":{
+          "@type":"LocalBusiness",
+          "@id":"https://orebromaskin.se/#business",
+          "name":"Örebro Maskin & Återbruk",
+          "url":"https://orebromaskin.se/",
+          "telephone":"+46727483256"
+        },
+        "areaServed":[
+          {"@type":"City","name":"Pålsboda"},
+          {"@type":"City","name":"Hallsberg"},
+          {"@type":"City","name":"Kumla"},
+          {"@type":"City","name":"Örebro"},
+          {"@type":"City","name":"Askersund"},
+          {"@type":"City","name":"Laxå"},
+          {"@type":"City","name":"Karlskoga"},
+          {"@type":"City","name":"Nora"},
+          {"@type":"City","name":"Lindesberg"},
+          {"@type":"City","name":"Motala"}
+        ],
+        "description":"Inköp av gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, redskap, motorer, reservdelar och andra begagnade maskiner efter individuell bedömning."
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Köper ni trasiga maskiner?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ja. Trasiga, ofullständiga och stillastående maskiner kan vara intressanta för reparation, reservdelar eller återbruk."}
+          },
+          {
+            "@type":"Question",
+            "name":"Vilka maskiner köper ni?",
+            "acceptedAnswer":{"@type":"Answer","text":"Vi tittar bland annat på gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, jordfräsar, redskap, motorer, växellådor, reservdelar och andra mekaniska objekt."}
+          },
+          {
+            "@type":"Question",
+            "name":"Köper ni större partier?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ja. Vi kan bedöma flera maskiner, verkstadsinnehåll, gårdspartier och andra större mängder på samma gång."}
+          },
+          {
+            "@type":"Question",
+            "name":"Kan ni hämta maskinen?",
+            "acceptedAnswer":{"@type":"Answer","text":"Transport kan ordnas efter överenskommelse för objekt och partier som vi köper, beroende på avstånd, omfattning och praktiska förutsättningar."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --brand:#1f3322;
+      --brand-dark:#142317;
+      --brand-mid:#2b4930;
+      --soft:#eaf1ea;
+      --accent:#d8a52e;
+      --bg:#f6f7f4;
+      --card:#ffffff;
+      --text:#142017;
+      --muted:#5f6d62;
+      --line:#dfe6df;
+      --radius:20px;
+      --radius-sm:14px;
+      --shadow:0 16px 42px rgba(20,35,23,.09);
+      --max:1160px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    a{color:inherit}
+    .wrap{width:min(100% - 40px,var(--max));margin-inline:auto}
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      padding:78px 0 66px;
+      background:
+        radial-gradient(circle at 88% 16%,rgba(216,165,46,.18),transparent 30%),
+        radial-gradient(circle at 8% 95%,rgba(255,255,255,.06),transparent 32%),
+        linear-gradient(140deg,var(--brand-dark),var(--brand-mid));
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(310px,.75fr);
+      gap:46px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:15px;
+      color:#f0c45e;
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .eyebrow:before{
+      content:"";
+      width:28px;
+      height:2px;
+      background:var(--accent);
+    }
+
+    h1,h2,h3{line-height:1.13;letter-spacing:-.025em;text-wrap:balance}
+    h1{margin:0 0 20px;font-size:clamp(2.55rem,6vw,4.6rem);max-width:14ch}
+    h2{margin:0 0 14px;font-size:clamp(2rem,4vw,3.05rem)}
+    h3{margin:0 0 10px;font-size:1.23rem}
+
+    .lead{
+      margin:0;
+      max-width:720px;
+      color:#dbe7dd;
+      font-size:clamp(1.05rem,2vw,1.2rem);
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:29px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:50px;
+      padding:12px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:850;
+      border:1px solid transparent;
+      transition:.15s ease;
+    }
+
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--accent);color:#182018}
+    .btn-secondary{border-color:rgba(255,255,255,.34);color:#fff;background:rgba(255,255,255,.06)}
+    .btn-dark{background:var(--brand-dark);color:#fff}
+
+    .hero-card{
+      padding:29px;
+      border:1px solid rgba(255,255,255,.13);
+      border-radius:var(--radius);
+      background:rgba(8,19,11,.55);
+      box-shadow:0 20px 55px rgba(0,0,0,.2);
+      backdrop-filter:blur(7px);
+    }
+
+    .hero-card h2{font-size:1.55rem}
+    .hero-card p{margin:0;color:#cfdbd1}
+    .hero-card ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:11px}
+    .hero-card li{display:grid;grid-template-columns:25px 1fr;gap:10px}
+    .hero-card li:before{
+      content:"✓";
+      display:grid;
+      place-items:center;
+      width:23px;
+      height:23px;
+      border-radius:50%;
+      background:rgba(216,165,46,.18);
+      color:#f3c75d;
+      font-weight:900;
+    }
+
+    section{padding:74px 0}
+    .section-white{background:#fff}
+    .section-soft{background:var(--soft)}
+    .section-dark{background:var(--brand-dark);color:#fff}
+
+    .section-head{max-width:790px;margin-bottom:30px}
+    .kicker{
+      margin:0 0 9px;
+      color:#7b5b13;
+      font-size:13px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .section-head p{margin:0;color:var(--muted);font-size:17px}
+    .section-dark .section-head p{color:#cbd8cd}
+    .section-dark .kicker{color:#efc25c}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .s3{grid-column:span 3}
+    .s4{grid-column:span 4}
+    .s5{grid-column:span 5}
+    .s6{grid-column:span 6}
+    .s7{grid-column:span 7}
+    .s8{grid-column:span 8}
+    .s12{grid-column:span 12}
+
+    .card{
+      height:100%;
+      padding:25px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-sm);
+      box-shadow:0 10px 28px rgba(20,35,23,.055);
+    }
+
+    .card p{margin:0;color:var(--muted)}
+    .card p+p{margin-top:13px}
+    .card ul{margin:14px 0 0;padding-left:20px;color:var(--muted)}
+    .card li{margin:7px 0}
+
+    .icon{
+      width:48px;
+      height:48px;
+      display:grid;
+      place-items:center;
+      margin-bottom:16px;
+      border-radius:13px;
+      background:var(--soft);
+      font-size:23px;
+    }
+
+    .feature{
+      padding:30px;
+      border-radius:24px;
+      background:linear-gradient(135deg,var(--brand),var(--brand-mid));
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .feature h3{font-size:1.7rem}
+    .feature p{margin:0;color:#d6e1d8}
+    .feature p+p{margin-top:12px}
+
+    .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .step{
+      padding:23px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+    .step-number{
+      width:39px;
+      height:39px;
+      display:grid;
+      place-items:center;
+      margin-bottom:14px;
+      border-radius:50%;
+      background:var(--brand-dark);
+      color:#fff;
+      font-weight:900;
+    }
+    .step p{margin:0;color:var(--muted)}
+
+    .area-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .area-tags span{
+      padding:9px 13px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--brand-dark);
+      font-weight:800;
+    }
+
+    .notice{
+      padding:22px;
+      border:1px solid #ead7a2;
+      border-radius:16px;
+      background:#fff8e8;
+    }
+    .notice h3{margin-bottom:7px}
+    .notice p{margin:0;color:#685d42}
+
+    details{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+    }
+    details+details{margin-top:11px}
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding:19px 54px 19px 21px;
+      font-weight:850;
+      position:relative;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{
+      content:"+";
+      position:absolute;
+      right:19px;
+      top:50%;
+      transform:translateY(-50%);
+      width:30px;
+      height:30px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--soft);
+    }
+    details[open] summary:after{content:"−"}
+    .answer{
+      padding:0 21px 20px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+    }
+    .answer p{margin:16px 0 0}
+
+    .cta{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+      padding:31px;
+      border-radius:24px;
+      background:var(--brand-dark);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .cta h2{font-size:2rem}
+    .cta p{margin:0;color:#cbd8cd}
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .s3,.s4,.s5,.s6,.s7,.s8{grid-column:span 12}
+      .steps{grid-template-columns:1fr 1fr}
+    }
+
+    @media(max-width:600px){
+      .hero{padding:54px 0 48px}
+      section{padding:52px 0}
+      .steps{grid-template-columns:1fr}
+      .actions,.cta{flex-direction:column;align-items:stretch}
+      .btn{width:100%}
+      .cta{align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Vi köper maskiner i Närke & Örebroregionen</div>
+        <h1>Sälj dina maskiner till oss</h1>
+
+        <p class="lead">
+          Har du en gräsklippare, åkgräsklippare, traktor, trädgårdsmaskin,
+          motor, reservdelar eller andra maskiner du vill sälja?
+          Örebro Maskin &amp; Återbruk utgår från Pålsboda och köper både
+          fungerande, trasiga, äldre och ofullständiga objekt.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary"
+             href="https://www.facebook.com/profile.php?id=61592291616762"
+             target="_blank"
+             rel="noopener">Skicka bilder via Facebook</a>
+          <a class="btn btn-secondary" href="tel:0727483256">Ring oss</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>Första bedömningen är enkel</h2>
+        <p>Skicka några tydliga bilder tillsammans med:</p>
+        <ul>
+          <li>Var maskinen finns</li>
+          <li>Märke och modell om du vet</li>
+          <li>Kända fel eller brister</li>
+          <li>Om maskinen startar eller fungerar</li>
+          <li>Gärna vad du tänkt dig i pris</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Maskiner vi köper</p>
+        <h2>Vi tittar brett – inte bara på en maskintyp</h2>
+        <p>
+          Nedan är exempel på sådant som ofta är intressant för oss.
+          Listan är inte uttömmande. Har du något annat maskinrelaterat är du välkommen att fråga.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card s3">
+          <div class="icon">🌱</div>
+          <h3>Gräsklippare</h3>
+          <p>Vanliga gräsklippare, åkgräsklippare, riders, frontklippare och reservdelsmaskiner.</p>
+        </article>
+
+        <article class="card s3">
+          <div class="icon">🚜</div>
+          <h3>Traktorer &amp; redskap</h3>
+          <p>Traktorer, lantbruksredskap, snöblad, harvar, plogar och annan användbar utrustning.</p>
+        </article>
+
+        <article class="card s3">
+          <div class="icon">⚙️</div>
+          <h3>Motorer &amp; delar</h3>
+          <p>Motorer, växellådor, startmotorer, klippaggregat, hjul och andra reservdelar.</p>
+        </article>
+
+        <article class="card s3">
+          <div class="icon">🛠️</div>
+          <h3>Övriga maskiner</h3>
+          <p>Jordfräsar, trädgårdsmaskiner, verkstadsmaskiner och andra mekaniska objekt.</p>
+        </article>
+      </div>
+
+      <div class="notice" style="margin-top:18px">
+        <h3>Hittar du inte din maskin?</h3>
+        <p>
+          Skicka gärna bilder ändå. Vi tittar hellre på ett objekt för mycket än att något med
+          återbruks- eller reservdelsvärde räknas bort i onödan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="grid">
+        <article class="card s7">
+          <p class="kicker">Även trasigt kan vara intressant</p>
+          <h2>En maskin behöver inte fungera för att ha ett värde</h2>
+
+          <p>
+            En åkgräsklippare som inte startar kan fortfarande ha en användbar motor,
+            växellåda, klippaggregat, hjul eller andra reservdelar.
+          </p>
+
+          <p>
+            Därför köper vi även reparationsobjekt och maskiner med kända fel.
+            Skick, modell, efterfrågan och reservdelsvärde avgör vad vi kan erbjuda.
+          </p>
+        </article>
+
+        <aside class="feature s5">
+          <h3>Exempel på skick</h3>
+          <p>✓ Startar och fungerar</p>
+          <p>✓ Startar men har fel</p>
+          <p>✓ Har stått länge</p>
+          <p>✓ Saknar delar</p>
+          <p>✓ Startar inte</p>
+          <p>✓ Reservdelsmaskin</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Större partier</p>
+        <h2>Har du mer än en maskin?</h2>
+        <p>
+          Vi tittar även på verkstäder, garage, gårdar och lager där flera maskiner,
+          delar, motorer eller redskap blivit stående över tid.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card s4">
+          <h3>Garage &amp; förråd</h3>
+          <p>Flera mindre maskiner, motorer, hjul, verktyg och reservdelar kan bedömas tillsammans.</p>
+        </article>
+
+        <article class="card s4">
+          <h3>Verkstäder</h3>
+          <p>Äldre maskiner, komponenter och lagerpartier som inte längre används kan vara intressanta.</p>
+        </article>
+
+        <article class="card s4">
+          <h3>Lantbruk</h3>
+          <p>Traktorer, redskap, motorer och annan äldre utrustning kan bedömas som en helhet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Så säljer du till oss</p>
+        <h2>Fyra enkla steg</h2>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <h3>Ta bilder</h3>
+          <p>Fotografera hela maskinen, eventuell modellskylt och synliga fel.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">2</div>
+          <h3>Skicka till oss</h3>
+          <p>Facebook är enklast. Skriv även ort, skick och gärna önskat pris.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">3</div>
+          <h3>Vi bedömer</h3>
+          <p>Vi tittar på modell, skick, efterfrågan, delar och transportbehov.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">4</div>
+          <h3>Vi gör affär</h3>
+          <p>Om båda är nöjda kommer vi överens om pris, betalning och överlämning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Område</p>
+        <h2>Vi utgår från Pålsboda</h2>
+        <p>
+          Vårt kärnområde är Närke och Örebroregionen, men rätt maskin eller större parti
+          kan motivera en betydligt längre resa.
+        </p>
+      </div>
+
+      <div class="area-tags">
+        <span>Pålsboda</span>
+        <span>Hallsberg</span>
+        <span>Kumla</span>
+        <span>Örebro</span>
+        <span>Askersund</span>
+        <span>Laxå</span>
+        <span>Karlskoga</span>
+        <span>Nora</span>
+        <span>Lindesberg</span>
+        <span>Motala</span>
+        <span>Katrineholm</span>
+        <span>och längre vid rätt objekt</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Företag &amp; lantbruk</p>
+        <h2>Vi köper även från verksamheter</h2>
+        <p>
+          Företag, verkstäder, fastighetsägare och lantbruk är välkomna att höra av sig
+          med maskiner, redskap, motorer, reservdelar och större partier.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card s6">
+          <h3>Utrustning som blivit över</h3>
+          <p>
+            När maskiner ersätts eller verksamheten förändras kan äldre utrustning fortfarande
+            ha ett bruksvärde, reservdelsvärde eller återbruksvärde.
+          </p>
+        </article>
+
+        <article class="card s6">
+          <h3>Börja med översiktsbilder</h3>
+          <p>
+            Vid större mängder behöver du inte identifiera varje del från början.
+            Några bilder på helheten räcker ofta för en första bedömning.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Vanliga frågor</p>
+        <h2>Att sälja maskiner till oss</h2>
+      </div>
+
+      <details>
+        <summary>Köper ni trasiga maskiner?</summary>
+        <div class="answer">
+          <p>Ja. Trasiga och ofullständiga maskiner kan vara intressanta för reparation, reservdelar eller återbruk.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Köper ni traktorer och lantbruksmaskiner?</summary>
+        <div class="answer">
+          <p>Ja, traktorer, redskap och annan lantbruksrelaterad utrustning kan vara intressant efter individuell bedömning.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Måste jag veta vad maskinen är värd?</summary>
+        <div class="answer">
+          <p>Nej. Har du ett pris i åtanke får du gärna skriva det, men det går också bra att börja med bilder och information.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Kan ni hämta maskinen?</summary>
+        <div class="answer">
+          <p>Transport kan ordnas efter överenskommelse för objekt och partier som vi köper. Avstånd, storlek och affärens omfattning påverkar upplägget.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Köper ni hela partier?</summary>
+        <div class="answer">
+          <p>Ja. Vi tittar gärna på flera maskiner, garage, verkstäder, gårdspartier och andra större mängder.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>Har du en maskin du vill sälja?</h2>
+          <p>Skicka bilder via Facebook tillsammans med ort och kort information så tittar vi på det.</p>
+        </div>
+
+        <div class="actions" style="margin-top:0">
+          <a class="btn btn-primary"
+             href="https://www.facebook.com/profile.php?id=61592291616762"
+             target="_blank"
+             rel="noopener">Skicka bilder via Facebook</a>
+          <a class="btn btn-secondary" href="tel:0727483256">Ring oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script>
+  async function injectPartial(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    try {
+      const response = await fetch(url, { cache: "no-cache" });
+      if (!response.ok) {
+        throw new Error("Kunde inte ladda " + url + " (" + response.status + ")");
+      }
+
+      el.innerHTML = await response.text();
+
+      if (id === "site-header") initHeader();
+      if (id === "site-footer") initFooter();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function initHeader() {
+    const header = document.querySelector(".orebro-site-header");
+    if (!header) return;
+
+    const button = header.querySelector(".orebro-menu-button");
+    const nav = header.querySelector(".orebro-nav");
+
+    if (!button || !nav) return;
+
+    button.addEventListener("click", function () {
+      const open = nav.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+      button.setAttribute("aria-label", open ? "Stäng meny" : "Öppna meny");
+      button.textContent = open ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("is-open");
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-label", "Öppna meny");
+        button.textContent = "☰";
+      });
+    });
+  }
+
+  function initFooter() {
+    const year = document.querySelector(".orebro-footer-year");
+    if (year) year.textContent = new Date().getFullYear();
+  }
+
+  injectPartial("site-header", "partials/header.html");
+  injectPartial("site-footer", "partials/footer.html");
+</script>
+
+</body>
+</html>
