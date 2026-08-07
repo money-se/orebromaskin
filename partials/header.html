@@ -62,7 +62,8 @@
     }
 
     .orebro-nav a:hover,
-    .orebro-nav a:focus-visible{
+    .orebro-nav a:focus-visible,
+    .orebro-nav a[aria-current="page"]{
       background:#eaf1ea;
       outline:none;
     }
@@ -168,10 +169,12 @@
     </button>
 
     <nav class="orebro-nav" id="orebro-main-nav" aria-label="Huvudmeny">
-      <a href="/#vi-koper">Vi köper</a>
-      <a href="/#sa-fungerar-det">Så fungerar det</a>
-      <a href="/#omrade">Vårt område</a>
-      <a href="/#faq">Vanliga frågor</a>
+      <a href="/">Hem</a>
+      <a href="/kop-maskiner.html">Vi köper maskiner</a>
+      <a href="/aterbruk.html">Återbruk</a>
+      <a href="/sa-funkar-det.html">Så fungerar det</a>
+      <a href="/foretag.html">Företag</a>
+      <a href="/om-oss.html">Om oss</a>
       <a class="orebro-facebook"
          href="https://www.facebook.com/profile.php?id=61592291616762"
          target="_blank"
@@ -189,6 +192,15 @@
       const nav = header.querySelector(".orebro-nav");
 
       if(!button || !nav) return;
+
+      let currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+      if(currentPath === "/index.html") currentPath = "/";
+      nav.querySelectorAll("a[href^='/']").forEach(function(link){
+        const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/+$/, "") || "/";
+        if(linkPath === currentPath){
+          link.setAttribute("aria-current", "page");
+        }
+      });
 
       button.addEventListener("click", function(){
         const open = nav.classList.toggle("is-open");
