@@ -19,61 +19,103 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Service",
-        "@id":"https://orebromaskin.se/aterbruk.html#service",
-        "name":"Återbruk av maskiner, reservdelar och andra objekt",
-        "url":"https://orebromaskin.se/aterbruk.html",
-        "provider":{
-          "@type":"LocalBusiness",
-          "@id":"https://orebromaskin.se/#business",
-          "name":"Örebro Maskin & Återbruk",
-          "url":"https://orebromaskin.se/",
-          "telephone":"+46727483256"
-        },
-        "areaServed":[
-          {"@type":"City","name":"Pålsboda"},
-          {"@type":"City","name":"Hallsberg"},
-          {"@type":"City","name":"Kumla"},
-          {"@type":"City","name":"Örebro"},
-          {"@type":"City","name":"Askersund"},
-          {"@type":"City","name":"Laxå"},
-          {"@type":"City","name":"Karlskoga"},
-          {"@type":"City","name":"Nora"},
-          {"@type":"City","name":"Lindesberg"},
-          {"@type":"City","name":"Motala"}
-        ],
-        "description":"Vi köper och tar tillvara maskiner, reservdelar, verktyg, redskap och andra återbruksobjekt som kan repareras, användas som delar eller få fortsatt användning."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://orebromaskin.se/aterbruk.html#service",
+      "name": "Återbruk av maskiner, reservdelar och andra objekt",
+      "url": "https://orebromaskin.se/aterbruk.html",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://orebromaskin.se/#business",
+        "name": "Örebro Maskin & Återbruk",
+        "url": "https://orebromaskin.se/",
+        "telephone": "+46727483256"
       },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"Vad menar ni med återbruk?",
-            "acceptedAnswer":{"@type":"Answer","text":"För oss betyder återbruk att ett objekt, en del eller en maskin får fortsatt användning i stället för att räknas bort direkt. Det kan ske genom reparation, reservdelar eller vidare användning."}
-          },
-          {
-            "@type":"Question",
-            "name":"Tar ni emot allt för återbruk?",
-            "acceptedAnswer":{"@type":"Answer","text":"Nej. Vi bedömer varje förfrågan individuellt och köper bara sådant som passar vår verksamhet och där vi ser ett rimligt återbruks-, reservdels- eller vidareförsäljningsvärde."}
-          },
-          {
-            "@type":"Question",
-            "name":"Kan trasiga saker fortfarande vara intressanta?",
-            "acceptedAnswer":{"@type":"Answer","text":"Ja. Trasiga eller ofullständiga objekt kan fortfarande innehålla användbara delar eller gå att reparera."}
-          },
-          {
-            "@type":"Question",
-            "name":"Kan ni titta på större partier?",
-            "acceptedAnswer":{"@type":"Answer","text":"Ja. Vi kan bedöma flera maskiner, reservdelar, verktyg och andra objekt på samma plats. Börja gärna med översiktsbilder."}
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Pålsboda"
+        },
+        {
+          "@type": "City",
+          "name": "Hallsberg"
+        },
+        {
+          "@type": "City",
+          "name": "Kumla"
+        },
+        {
+          "@type": "City",
+          "name": "Örebro"
+        },
+        {
+          "@type": "City",
+          "name": "Askersund"
+        },
+        {
+          "@type": "City",
+          "name": "Laxå"
+        },
+        {
+          "@type": "City",
+          "name": "Karlskoga"
+        },
+        {
+          "@type": "City",
+          "name": "Nora"
+        },
+        {
+          "@type": "City",
+          "name": "Lindesberg"
+        },
+        {
+          "@type": "City",
+          "name": "Motala"
+        }
+      ],
+      "description": "Vi köper och tar tillvara maskiner, reservdelar, verktyg, redskap och andra återbruksobjekt som kan repareras, användas som delar eller få fortsatt användning."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tar ni emot allt för återbruk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Vi bedömer varje objekt eller parti individuellt och köper sådant som passar vår verksamhet och där vi ser ett rimligt värde."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan trasiga saker vara intressanta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Trasiga objekt kan fortfarande gå att reparera eller innehålla användbara reservdelar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag skicka bilder på ett helt garage eller förråd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Börja gärna med översiktsbilder så kan vi därefter säga vad vi vill titta närmare på."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ni ordna transport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transport kan ordnas efter överenskommelse för objekt och partier som vi köper. Avstånd, omfattning och praktiska förutsättningar påverkar upplägget."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -283,6 +325,14 @@
       .btn{width:100%}
       .cta{align-items:flex-start}
     }
+  
+    .orebro-area-link-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .orebro-area-link-grid a{display:block;padding:15px 17px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:850}
+    .orebro-area-link-grid a:hover,.orebro-area-link-grid a:focus-visible{border-color:#b8c8ba;box-shadow:0 8px 20px rgba(20,35,23,.07);outline:none}
+    .orebro-area-more{margin-top:18px}
+    @media(max-width:900px){.orebro-area-link-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.orebro-area-link-grid{grid-template-columns:1fr}}
+
   </style>
 </head>
 
@@ -470,7 +520,35 @@
     </div>
   </section>
 
-  <section class="section-white">
+  
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Lokala områden</p>
+        <h2>Vi tar emot förfrågningar från flera orter</h2>
+        <p>
+          Vi utgår från Pålsboda och arbetar främst i Närke och Örebroregionen.
+          För rätt objekt eller större partier kan vi även åka längre.
+        </p>
+      </div>
+      <div class="orebro-area-link-grid">
+        <a href="/palsboda.html">Pålsboda</a>
+        <a href="/orebro.html">Örebro</a>
+        <a href="/hallsberg.html">Hallsberg</a>
+        <a href="/kumla.html">Kumla</a>
+        <a href="/askersund.html">Askersund</a>
+        <a href="/karlskoga.html">Karlskoga</a>
+        <a href="/nora.html">Nora</a>
+        <a href="/lindesberg.html">Lindesberg</a>
+      </div>
+      <div class="orebro-area-more">
+        <a class="btn btn-dark" href="/orter.html">Se alla orter</a>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section-white">
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Vanliga frågor</p>
