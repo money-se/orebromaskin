@@ -19,61 +19,111 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Service",
-        "@id":"https://orebromaskin.se/kop-maskiner.html#service",
-        "name":"Inköp av begagnade maskiner i Örebro och Närke",
-        "url":"https://orebromaskin.se/kop-maskiner.html",
-        "provider":{
-          "@type":"LocalBusiness",
-          "@id":"https://orebromaskin.se/#business",
-          "name":"Örebro Maskin & Återbruk",
-          "url":"https://orebromaskin.se/",
-          "telephone":"+46727483256"
-        },
-        "areaServed":[
-          {"@type":"City","name":"Pålsboda"},
-          {"@type":"City","name":"Hallsberg"},
-          {"@type":"City","name":"Kumla"},
-          {"@type":"City","name":"Örebro"},
-          {"@type":"City","name":"Askersund"},
-          {"@type":"City","name":"Laxå"},
-          {"@type":"City","name":"Karlskoga"},
-          {"@type":"City","name":"Nora"},
-          {"@type":"City","name":"Lindesberg"},
-          {"@type":"City","name":"Motala"}
-        ],
-        "description":"Inköp av gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, redskap, motorer, reservdelar och andra begagnade maskiner efter individuell bedömning."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://orebromaskin.se/kop-maskiner.html#service",
+      "name": "Inköp av begagnade maskiner i Örebro och Närke",
+      "url": "https://orebromaskin.se/kop-maskiner.html",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://orebromaskin.se/#business",
+        "name": "Örebro Maskin & Återbruk",
+        "url": "https://orebromaskin.se/",
+        "telephone": "+46727483256"
       },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"Köper ni trasiga maskiner?",
-            "acceptedAnswer":{"@type":"Answer","text":"Ja. Trasiga, ofullständiga och stillastående maskiner kan vara intressanta för reparation, reservdelar eller återbruk."}
-          },
-          {
-            "@type":"Question",
-            "name":"Vilka maskiner köper ni?",
-            "acceptedAnswer":{"@type":"Answer","text":"Vi tittar bland annat på gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, jordfräsar, redskap, motorer, växellådor, reservdelar och andra mekaniska objekt."}
-          },
-          {
-            "@type":"Question",
-            "name":"Köper ni större partier?",
-            "acceptedAnswer":{"@type":"Answer","text":"Ja. Vi kan bedöma flera maskiner, verkstadsinnehåll, gårdspartier och andra större mängder på samma gång."}
-          },
-          {
-            "@type":"Question",
-            "name":"Kan ni hämta maskinen?",
-            "acceptedAnswer":{"@type":"Answer","text":"Transport kan ordnas efter överenskommelse för objekt och partier som vi köper, beroende på avstånd, omfattning och praktiska förutsättningar."}
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Pålsboda"
+        },
+        {
+          "@type": "City",
+          "name": "Hallsberg"
+        },
+        {
+          "@type": "City",
+          "name": "Kumla"
+        },
+        {
+          "@type": "City",
+          "name": "Örebro"
+        },
+        {
+          "@type": "City",
+          "name": "Askersund"
+        },
+        {
+          "@type": "City",
+          "name": "Laxå"
+        },
+        {
+          "@type": "City",
+          "name": "Karlskoga"
+        },
+        {
+          "@type": "City",
+          "name": "Nora"
+        },
+        {
+          "@type": "City",
+          "name": "Lindesberg"
+        },
+        {
+          "@type": "City",
+          "name": "Motala"
+        }
+      ],
+      "description": "Inköp av gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, redskap, motorer, reservdelar och andra begagnade maskiner efter individuell bedömning."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Köper ni trasiga maskiner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Trasiga och ofullständiga maskiner kan vara intressanta för reparation, reservdelar eller återbruk."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Köper ni traktorer och lantbruksmaskiner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, traktorer, redskap och annan lantbruksrelaterad utrustning kan vara intressant efter individuell bedömning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Måste jag veta vad maskinen är värd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Har du ett pris i åtanke får du gärna skriva det, men det går också bra att börja med bilder och information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ni hämta maskinen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transport kan ordnas efter överenskommelse för objekt och partier som vi köper. Avstånd, storlek och affärens omfattning påverkar upplägget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Köper ni hela partier?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Vi tittar gärna på flera maskiner, garage, verkstäder, gårdspartier och andra större mängder."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -373,6 +423,14 @@
       .btn{width:100%}
       .cta{align-items:flex-start}
     }
+  
+    .orebro-area-link-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .orebro-area-link-grid a{display:block;padding:15px 17px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:850}
+    .orebro-area-link-grid a:hover,.orebro-area-link-grid a:focus-visible{border-color:#b8c8ba;box-shadow:0 8px 20px rgba(20,35,23,.07);outline:none}
+    .orebro-area-more{margin-top:18px}
+    @media(max-width:900px){.orebro-area-link-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.orebro-area-link-grid{grid-template-columns:1fr}}
+
   </style>
 </head>
 
@@ -620,7 +678,35 @@
     </div>
   </section>
 
+  
   <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Lokala områden</p>
+        <h2>Vi tar emot förfrågningar från flera orter</h2>
+        <p>
+          Vi utgår från Pålsboda och arbetar främst i Närke och Örebroregionen.
+          För rätt objekt eller större partier kan vi även åka längre.
+        </p>
+      </div>
+      <div class="orebro-area-link-grid">
+        <a href="/palsboda.html">Pålsboda</a>
+        <a href="/orebro.html">Örebro</a>
+        <a href="/hallsberg.html">Hallsberg</a>
+        <a href="/kumla.html">Kumla</a>
+        <a href="/askersund.html">Askersund</a>
+        <a href="/karlskoga.html">Karlskoga</a>
+        <a href="/nora.html">Nora</a>
+        <a href="/lindesberg.html">Lindesberg</a>
+      </div>
+      <div class="orebro-area-more">
+        <a class="btn btn-dark" href="/orter.html">Se alla orter</a>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section-soft">
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Vanliga frågor</p>
