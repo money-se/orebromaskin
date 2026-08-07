@@ -19,73 +19,138 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"LocalBusiness",
-        "@id":"https://orebromaskin.se/#business",
-        "name":"Örebro Maskin & Återbruk",
-        "url":"https://orebromaskin.se/",
-        "telephone":"+46727483256",
-        "description":"Lokalt inköp av begagnade maskiner, gräsklippare, traktorer, redskap, reservdelar, verktyg och andra återbruksobjekt med utgångspunkt i Pålsboda. Vi arbetar i Närke och Örebroregionen och bedömer även förfrågningar längre bort.",
-        "areaServed":[
-          {"@type":"City","name":"Pålsboda"},
-          {"@type":"City","name":"Hallsberg"},
-          {"@type":"City","name":"Kumla"},
-          {"@type":"City","name":"Örebro"},
-          {"@type":"City","name":"Askersund"},
-          {"@type":"City","name":"Laxå"},
-          {"@type":"City","name":"Fjugesta"},
-          {"@type":"City","name":"Nora"},
-          {"@type":"City","name":"Lindesberg"},
-          {"@type":"City","name":"Karlskoga"},
-          {"@type":"City","name":"Degerfors"},
-          {"@type":"City","name":"Motala"},
-          {"@type":"City","name":"Katrineholm"},
-          {"@type":"City","name":"Finspång"},
-          {"@type":"City","name":"Norrköping"},
-          {"@type":"City","name":"Kristinehamn"},
-          {"@type":"City","name":"Karlstad"}
-        ],
-        "sameAs":[
-          "https://www.facebook.com/profile.php?id=61592291616762"
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://orebromaskin.se/#business",
+      "name": "Örebro Maskin & Återbruk",
+      "url": "https://orebromaskin.se/",
+      "telephone": "+46727483256",
+      "description": "Lokalt inköp av begagnade maskiner, gräsklippare, traktorer, redskap, reservdelar, verktyg och andra återbruksobjekt med utgångspunkt i Pålsboda. Vi arbetar i Närke och Örebroregionen och bedömer även förfrågningar längre bort.",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Pålsboda"
+        },
+        {
+          "@type": "City",
+          "name": "Hallsberg"
+        },
+        {
+          "@type": "City",
+          "name": "Kumla"
+        },
+        {
+          "@type": "City",
+          "name": "Örebro"
+        },
+        {
+          "@type": "City",
+          "name": "Askersund"
+        },
+        {
+          "@type": "City",
+          "name": "Laxå"
+        },
+        {
+          "@type": "City",
+          "name": "Fjugesta"
+        },
+        {
+          "@type": "City",
+          "name": "Nora"
+        },
+        {
+          "@type": "City",
+          "name": "Lindesberg"
+        },
+        {
+          "@type": "City",
+          "name": "Karlskoga"
+        },
+        {
+          "@type": "City",
+          "name": "Degerfors"
+        },
+        {
+          "@type": "City",
+          "name": "Motala"
+        },
+        {
+          "@type": "City",
+          "name": "Katrineholm"
+        },
+        {
+          "@type": "City",
+          "name": "Finspång"
+        },
+        {
+          "@type": "City",
+          "name": "Norrköping"
+        },
+        {
+          "@type": "City",
+          "name": "Kristinehamn"
+        },
+        {
+          "@type": "City",
+          "name": "Karlstad"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61592291616762"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://orebromaskin.se/#website",
+      "url": "https://orebromaskin.se/",
+      "name": "Örebro Maskin & Återbruk",
+      "publisher": {
+        "@id": "https://orebromaskin.se/#business"
       },
-      {
-        "@type":"WebSite",
-        "@id":"https://orebromaskin.se/#website",
-        "url":"https://orebromaskin.se/",
-        "name":"Örebro Maskin & Återbruk",
-        "publisher":{"@id":"https://orebromaskin.se/#business"},
-        "inLanguage":"sv-SE"
-      },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"Vad köper ni i Örebro?",
-            "acceptedAnswer":{"@type":"Answer","text":"Vi tittar bland annat på gräsklippare, åkgräsklippare, traktorer, trädgårdsmaskiner, redskap, motorer, reservdelar, verktyg och andra återbruksobjekt. Skicka gärna bilder även om du är osäker."}
-          },
-          {
-            "@type":"Question",
-            "name":"Köper ni trasiga maskiner?",
-            "acceptedAnswer":{"@type":"Answer","text":"Ja. Trasiga, ofullständiga och stillastående maskiner kan fortfarande vara intressanta för reparation, reservdelar eller återbruk."}
-          },
-          {
-            "@type":"Question",
-            "name":"Kan ni hämta det ni köper?",
-            "acceptedAnswer":{"@type":"Answer","text":"Transport kan ordnas efter överenskommelse för objekt eller partier som vi köper, beroende på plats, omfattning och praktiska förutsättningar."}
-          },
-          {
-            "@type":"Question",
-            "name":"Hur får jag en bedömning?",
-            "acceptedAnswer":{"@type":"Answer","text":"Skicka några tydliga bilder, ort, kort information om skicket samt gärna märke och modell om du vet."}
+      "inLanguage": "sv-SE"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Köper ni maskiner som inte startar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Trasiga eller ofullständiga maskiner kan fortfarande vara intressanta för reparation, reservdelar eller återbruk."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Måste jag veta vad maskinen är värd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Har du ett pris i åtanke får du gärna skriva det, men du kan också skicka bilder först så tar vi dialogen därifrån."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Köper ni flera saker på samma gång?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Det kan gälla flera maskiner, ett garage, ett förråd, en verkstad eller ett större blandat parti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ni hämta det ni köper?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transport kan ordnas efter överenskommelse för objekt eller partier som vi köper. Det bedöms från fall till fall."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -186,7 +251,8 @@
     .step p{margin:0;color:var(--muted)}
 
     .area-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-    .area-tags span{padding:9px 13px;background:#fff;border:1px solid var(--line);border-radius:999px;color:var(--brand-dark);font-weight:800}
+    .area-tags span,.area-tags a{padding:9px 13px;background:#fff;border:1px solid var(--line);border-radius:999px;color:var(--brand-dark);font-weight:800;text-decoration:none}
+    .area-tags a:hover,.area-tags a:focus-visible{border-color:#b8c8ba;background:#f7faf7;outline:none}
 
     .section-dark .card{
       background:rgba(255,255,255,.08);
@@ -195,7 +261,8 @@
     }
     .section-dark .card h3{color:#fff}
     .section-dark .card p{color:#cbd8cd}
-    .section-dark .area-tags span{
+    .section-dark .area-tags span,
+    .section-dark .area-tags a{
       background:rgba(255,255,255,.09);
       border-color:rgba(255,255,255,.16);
       color:#fff;
@@ -421,7 +488,7 @@
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Vårt område</p>
-        <h2>Från Närke – och längre när affären är rätt</h2>
+        <h2>Från Pålsboda – och längre när affären är rätt</h2>
         <p>
           Vi utgår från Pålsboda. Vårt kärnområde är Närke och Örebroregionen,
           men vi sätter inte en hård gräns vid länsgränsen. För rätt maskin,
@@ -434,39 +501,46 @@
           <h3>Kärnområde</h3>
           <p>Här arbetar vi gärna även med mindre och normalstora objekt.</p>
           <div class="area-tags">
-            <span>Pålsboda</span>
-            <span>Hallsberg</span>
-            <span>Kumla</span>
-            <span>Örebro</span>
-            <span>Askersund</span>
-            <span>Fjugesta</span>
-            <span>Laxå</span>
+            <a href="/palsboda.html">Pålsboda</a>
+            <a href="/hallsberg.html">Hallsberg</a>
+            <a href="/kumla.html">Kumla</a>
+            <a href="/orebro.html">Örebro</a>
+            <a href="/askersund.html">Askersund</a>
+            <a href="/fjugesta.html">Fjugesta</a>
+            <a href="/laxa.html">Laxå</a>
           </div>
         </article>
 
         <article class="card s4">
           <h3>Utökat område</h3>
-          <p>Fortfarande naturliga köravstånd när objektet eller partiet är intressant.</p>
+          <p>Naturliga förfrågningar när objektet eller partiet motiverar körningen.</p>
           <div class="area-tags">
-            <span>Karlskoga</span>
-            <span>Degerfors</span>
-            <span>Nora</span>
-            <span>Lindesberg</span>
-            <span>Motala</span>
-            <span>Katrineholm</span>
+            <a href="/karlskoga.html">Karlskoga</a>
+            <a href="/degerfors.html">Degerfors</a>
+            <a href="/nora.html">Nora</a>
+            <a href="/lindesberg.html">Lindesberg</a>
+            <a href="/motala.html">Motala</a>
+            <a href="/katrineholm.html">Katrineholm</a>
+            <a href="/arboga.html">Arboga</a>
+            <a href="/koping.html">Köping</a>
           </div>
         </article>
 
         <article class="card s4">
           <h3>Rätt objekt – längre bort</h3>
-          <p>Vid större partier eller särskilt intressanta maskiner åker vi även längre.</p>
+          <p>Vid större partier eller särskilt intressanta maskiner tittar vi även längre bort.</p>
           <div class="area-tags">
-            <span>Finspång</span>
-            <span>Norrköping</span>
-            <span>Kristinehamn</span>
-            <span>Karlstad</span>
+            <a href="/finspang.html">Finspång</a>
+            <a href="/norrkoping.html">Norrköping</a>
+            <a href="/kristinehamn.html">Kristinehamn</a>
+            <a href="/karlstad.html">Karlstad</a>
+            <a href="/eskilstuna.html">Eskilstuna</a>
           </div>
         </article>
+      </div>
+
+      <div style="margin-top:24px">
+        <a class="btn btn-primary" href="/orter.html">Se alla våra orter</a>
       </div>
     </div>
   </section>
