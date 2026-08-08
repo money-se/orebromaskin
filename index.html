@@ -306,6 +306,14 @@
       .cta{align-items:flex-start}
       .footer-grid{grid-template-columns:1fr}
     }
+  
+    .intent-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .intent-links a{display:block;padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:850}
+    .intent-links a span{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:600}
+    .intent-links a:hover,.intent-links a:focus-visible{border-color:#b8c8ba;box-shadow:0 8px 20px rgba(20,35,23,.07);outline:none}
+    @media(max-width:900px){.intent-links{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.intent-links{grid-template-columns:1fr}}
+
   </style>
 </head>
 
@@ -421,7 +429,24 @@
     </div>
   </section>
 
-  <section id="sa-fungerar-det" class="section-white">
+  
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Sälj till oss</p>
+        <h2>Vanliga sätt att sälja till oss</h2>
+        <p>Börja på den sida som bäst motsvarar det du har – eller skicka bilder direkt om du är osäker.</p>
+      </div>
+      <div class="intent-links">
+        <a href="/salja-akgrasklippare.html">Åkgräsklippare<span>Rider, frontklippare och repobjekt.</span></a>
+        <a href="/salja-traktor-redskap.html">Traktorer &amp; redskap<span>Mindre traktorer och maskinredskap.</span></a>
+        <a href="/salja-reservdelar.html">Reservdelar<span>Motorer, växellådor och blandade delar.</span></a>
+        <a href="/salj-till-oss.html">Sälj till oss<span>Se hela ingången för försäljning.</span></a>
+      </div>
+    </div>
+  </section>
+
+<section id="sa-fungerar-det" class="section-white">
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Så fungerar det</p>
