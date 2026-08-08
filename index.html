@@ -314,6 +314,13 @@
     @media(max-width:900px){.intent-links{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.intent-links{grid-template-columns:1fr}}
 
+  
+    .reuse-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .reuse-links a{display:block;padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:850}
+    .reuse-links a span{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:600}
+    @media(max-width:900px){.reuse-links{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.reuse-links{grid-template-columns:1fr}}
+
   </style>
 </head>
 
@@ -526,7 +533,24 @@
     </div>
   </section>
 
-  <section id="omrade" class="section-dark">
+  
+  <section class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Återbruk</p>
+        <h2>Fråga innan du slänger</h2>
+        <p>Gamla maskiner och delar kan ibland få ett nytt liv. Om du inte vill sälja kan du ändå skicka bilder och fråga om det passar vårt återbruk.</p>
+      </div>
+      <div class="reuse-links">
+        <a href="/ge-bort-gammal-maskin.html">Ge bort gammal maskin<span>För objekt du hellre ser återbrukas.</span></a>
+        <a href="/ge-bort-reservdelar.html">Ge bort reservdelar<span>Delar som kan hjälpa andra maskiner vidare.</span></a>
+        <a href="/vad-hander-med-aterbruk.html">Vad händer sedan?<span>Se hur saker kan användas, repareras eller demonteras.</span></a>
+        <a href="/ge-till-aterbruk.html">Ge till återbruk<span>Se hela återbruksnavet.</span></a>
+      </div>
+    </div>
+  </section>
+
+<section id="omrade" class="section-dark">
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Vårt område</p>
