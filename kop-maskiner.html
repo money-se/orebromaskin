@@ -431,6 +431,14 @@
     @media(max-width:900px){.orebro-area-link-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.orebro-area-link-grid{grid-template-columns:1fr}}
 
+  
+    .intent-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .intent-links a{display:block;padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:850}
+    .intent-links a span{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:600}
+    .intent-links a:hover,.intent-links a:focus-visible{border-color:#b8c8ba;box-shadow:0 8px 20px rgba(20,35,23,.07);outline:none}
+    @media(max-width:900px){.intent-links{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.intent-links{grid-template-columns:1fr}}
+
   </style>
 </head>
 
