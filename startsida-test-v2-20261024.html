@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="robots" content="noindex,nofollow">
+ <meta name="theme-color" content="#193824">
+ <meta name="description" content="Förhandsgranskning av Örebro Maskin & Återbruks moderniserade startsida – köp och hämtning av maskiner i Örebroregionen.">
+ <title>Förhandsvisning: ny startsida | Örebro Maskin &amp; Återbruk</title>
+ <link rel="preconnect" href="https://skaraborgmaskin.se">
+ <link rel="preload" as="image" href="https://skaraborgmaskin.se/indexhero.jpg">
+ <style>
+ :root{
+  --dark:#112b1a;--forest:#193824;--forest-mid:#274d32;--text:#17291c;--muted:#56685a;
+  --sage:#dbe9d8;--sage2:#e8f0e5;--cream:#f4eee0;--sand:#e9d8b7;--gold:#e4be68;--line:#ceddcf;
+  --max:1180px;--radius:21px;--shadow:0 18px 48px rgba(18,43,26,.1);
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif
+ }
+ *,*::before,*::after{box-sizing:border-box}
+ html{scroll-behavior:smooth;scroll-padding-top:90px}
+ body{margin:0;font:400 16px/1.65 var(--font);color:var(--text);background:var(--cream)}
+ img{display:block;width:100%;max-width:100%;object-fit:cover}
+ a{color:inherit}
+ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #a57815;outline-offset:3px}
+ .ob2-wrap{width:min(calc(100% - 44px),var(--max));margin-inline:auto}
+ .ob2-skip{position:absolute;top:-80px;left:12px;background:#fff;color:var(--text);z-index:1500;padding:10px 15px;border-radius:8px}
+ .ob2-skip:focus{top:10px}
+ .ob2-preview{background:#f2dea9;color:#51401b;text-align:center;padding:6px 14px;font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+ .ob2-eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#3f6946;display:flex;align-items:center;gap:10px;margin:0 0 15px}
+ .ob2-eyebrow:before{content:"";display:block;width:23px;height:2px;background:#bc913c}
+ .ob2-eyebrow.is-light{color:#f4d696}
+ .ob2-eyebrow.is-light:before{background:#f4d696}
+ h1,h2,h3{line-height:1.13;letter-spacing:-.045em;text-wrap:balance}
+ h2{font-size:clamp(28px,4vw,45px);margin:0 0 15px}
+ h3{margin:0 0 9px}
+ p{margin:0}
+ .ob2-lead{font-size:clamp(15px,1.5vw,18px);color:var(--muted);max-width:730px}
+ .ob2-section{padding:82px 0}
+ .ob2-btn{display:inline-flex;justify-content:center;align-items:center;gap:12px;font-size:14px;line-height:1.3;font-weight:840;padding:14px 21px;min-height:51px;border:1px solid transparent;border-radius:12px;text-decoration:none;transition:transform .18s,background .18s}
+ .ob2-btn:hover{transform:translateY(-2px)}
+ .ob2-btn.primary{background:var(--forest);color:#fff;box-shadow:0 9px 19px rgba(18,43,26,.18)}
+ .ob2-btn.primary:hover{background:#2d5236}
+ .ob2-btn.outline{border-color:#b3c7b4;background:rgba(255,255,255,.72);color:var(--forest)}
+ .ob2-btn.outline:hover{background:#fff}
+ .ob2-btn.light{background:#fff;color:var(--dark)}
+ .ob2-btn.gold{background:#e9cb84;color:var(--dark)}
+ .ob2-link{font-size:13px;font-weight:860;text-decoration:underline;text-underline-offset:5px;color:var(--forest)}
+ .ob2-intro{background:radial-gradient(circle at 95% 0%,rgba(255,255,255,.75),transparent 37%),linear-gradient(125deg,#e5f0e1,#d7e6d5 68%,#c8ddc8);padding:70px 0 75px;border-bottom:1px solid #bfd1bf}
+ .ob2-hero{display:grid;grid-template-columns:1.07fr .93fr;align-items:center;gap:49px}
+ .ob2-hero h1{font-size:clamp(40px,5.3vw,70px);line-height:1.06;margin:0 0 22px;color:var(--dark);letter-spacing:-.058em}
+ .ob2-hero h1 em{color:#4c754e;font-style:normal}
+ .ob2-hero .ob2-lead{max-width:625px;line-height:1.76}
+ .ob2-actions{display:flex;flex-wrap:wrap;gap:10px;margin:27px 0 18px}
+ .ob2-actions .ob2-btn{white-space:normal}
+ .ob2-contacthint{font-size:12px;color:#4e6752}
+ .ob2-contacthint a{font-weight:800;text-decoration:underline;text-underline-offset:3px}
+ .ob2-trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+ .ob2-trust span{border-radius:999px;background:rgba(255,255,255,.5);border:1px solid #b9d0b8;color:#34563a;font-size:11px;font-weight:800;padding:7px 10px}
+ .ob2-photo{height:505px;border-radius:24px 24px 76px 24px;position:relative;overflow:hidden;background:#afc6b0;box-shadow:0 25px 60px rgba(15,41,23,.2)}
+ .ob2-photo img{height:100%;object-position:51% 52%}
+ .ob2-photo:after{content:"";position:absolute;inset:48% 0 0;background:linear-gradient(transparent,rgba(8,26,15,.9))}
+ .ob2-photo-credit{position:absolute;z-index:1;bottom:25px;left:27px;right:27px;color:#fff}
+ .ob2-photo-credit strong{display:block;font-size:18px;line-height:1.28}
+ .ob2-photo-credit small{display:block;margin-top:7px;color:#d7e3d7;font-size:11px;line-height:1.5}
+ .ob2-steps{background:linear-gradient(120deg,#122c1d,#255132);color:#fff;padding:31px 0}
+ .ob2-stepsinner{display:grid;grid-template-columns:180px repeat(4,minmax(0,1fr));gap:16px;align-items:center}
+ .ob2-steptitle strong{font-size:20px;line-height:1.2;display:block}
+ .ob2-steptitle a{color:#f0d08b;font-size:11px;font-weight:800}
+ .ob2-step{display:flex;align-items:center;gap:10px;min-width:0}
+ .ob2-step i{font-style:normal;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#e6c77f;color:#16311f;font-size:12px;font-weight:950;flex:none}
+ .ob2-step span{font-size:12px;font-weight:790;line-height:1.4}
+ .ob2-service{background:linear-gradient(160deg,#f5efdf,#eee9dc)}
+ .ob2-sectionhead{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:27px}
+ .ob2-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+ .ob2-card{display:flex;flex-direction:column;min-height:245px;background:#fff;border:1px solid #d8e1d3;border-radius:19px;padding:24px;text-decoration:none;box-shadow:0 7px 24px rgba(10,28,15,.055);transition:transform .16s}
+ .ob2-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+ .ob2-card.primary{background:linear-gradient(145deg,#15321f,#2a5333);border-color:transparent;color:white}
+ .ob2-card .ob2-icon{width:49px;height:49px;display:grid;place-items:center;border-radius:14px;background:#e9f2e7;color:#24492d;font-size:25px;margin-bottom:21px}
+ .ob2-card.primary .ob2-icon{color:#f0d08b;background:rgba(255,255,255,.1)}
+ .ob2-card h3{font-size:20px}
+ .ob2-card p{font-size:13px;color:#596c5b;line-height:1.6;margin-bottom:15px}
+ .ob2-card.primary p{color:#d9e7da}
+ .ob2-card b{font-size:12px;color:#21502c;margin-top:auto;display:flex;justify-content:space-between;gap:7px}
+ .ob2-card.primary b{color:#f0d08b}
+ .ob2-secondary{display:flex;flex-wrap:wrap;gap:8px 18px;border-top:1px solid #dbd6c8;padding-top:19px;margin-top:25px;align-items:center}
+ .ob2-secondary strong{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+ .ob2-secondary a{font-size:12px;color:var(--forest);font-weight:820;text-decoration:underline;text-underline-offset:4px}
+ .ob2-reuse{background:linear-gradient(145deg,#0f2b1a,#20432a);color:#fff;overflow:hidden}
+ .ob2-reuse .ob2-lead{color:#d7e5d7}
+ .ob2-reuse-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:36px;align-items:center}
+ .ob2-reuse h2{font-size:clamp(31px,4.5vw,52px)}
+ .ob2-reuse-copy p:not(.ob2-eyebrow){margin-top:15px;max-width:470px;color:#d3e5d5}
+ .ob2-reuse-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:25px}
+ .ob2-reuse-links a{color:#f1d38f;font-size:13px;font-weight:850;text-underline-offset:4px}
+ .ob2-reuse-pics{display:grid;grid-template-columns:1.15fr .85fr;gap:15px;align-items:start}
+ .ob2-reuse-pics figure{margin:0;position:relative;overflow:hidden;border-radius:20px;background:#496b51}
+ .ob2-reuse-pics figure:first-child{height:390px}
+ .ob2-reuse-pics figure:last-child{height:290px;margin-top:45px}
+ .ob2-reuse-pics img{height:100%}
+ .ob2-reuse-pics figure figcaption{position:absolute;bottom:0;left:0;right:0;padding:17px 15px;background:linear-gradient(transparent,rgba(12,35,19,.83));font-size:11px;color:#fff}
+ .ob2-biz{background:#e1eddf}
+ .ob2-bizlayout{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
+ .ob2-bizmain{padding:35px;border-radius:22px;background:#fff;box-shadow:0 7px 25px rgba(19,49,26,.06);display:flex;flex-direction:column;align-items:start}
+ .ob2-bizmain h3{font-size:clamp(26px,3vw,36px)}
+ .ob2-bizmain p{color:var(--muted);font-size:14px;margin-bottom:25px}
+ .ob2-bizmain .ob2-btn{margin-top:auto}
+ .ob2-bizaside{padding:32px;border-radius:22px;background:linear-gradient(145deg,#f1dfb8,#f8efdd);display:flex;flex-direction:column;align-items:start}
+ .ob2-bizaside h3{font-size:clamp(26px,3vw,36px)}
+ .ob2-bizaside p{font-size:14px;color:#5e624f;margin-bottom:22px}
+ .ob2-bizaside .ob2-link{margin-top:auto}
+ .ob2-areas{background:linear-gradient(145deg,#f7f2e7,#ede8da)}
+ .ob2-area-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:43px;align-items:start}
+ .ob2-area-layout p:not(.ob2-eyebrow){font-size:14px;color:var(--muted);margin:0 0 17px}
+ .ob2-cities{display:flex;flex-wrap:wrap;gap:9px}
+ .ob2-cities a{text-decoration:none;font-size:12px;font-weight:840;padding:9px 12px;border-radius:999px;min-height:39px;background:#fff;border:1px solid #d8dfd3;color:#274e2f}
+ .ob2-cities a:hover{background:#e1eddf;border-color:#a8c5ab}
+ .ob2-ecosystem{background:#fff;padding:58px 0}
+ .ob2-eco-wrap{border:1px solid #d6e1d6;border-radius:22px;overflow:hidden;background:#f6f9f5;display:grid;grid-template-columns:1fr 1.45fr}
+ .ob2-eco-intro{background:#1b3b26;color:#fff;padding:30px}
+ .ob2-eco-intro strong{font-size:24px;line-height:1.2;display:block;letter-spacing:-.03em}
+ .ob2-eco-intro p{color:#d9e9da;font-size:13px;margin-top:11px}
+ .ob2-eco-links{display:grid;grid-template-columns:repeat(3,1fr)}
+ .ob2-eco-links a{display:flex;flex-direction:column;justify-content:center;gap:7px;padding:20px;text-decoration:none;border-right:1px solid #d7e3d6}
+ .ob2-eco-links a:last-child{border:0}
+ .ob2-eco-links b{font-size:14px}
+ .ob2-eco-links small{font-size:11px;color:var(--muted)}
+ .ob2-eco-links span{font-size:14px;color:#3b6940;margin-top:3px}
+ .ob2-faq{background:#dce9d9;padding:72px 0}
+ .ob2-faq-inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px}
+ .ob2-faq-list{display:grid;gap:8px}
+ .ob2-faq details{background:#fff;border:1px solid #bacfbc;border-radius:13px;padding:0 17px}
+ .ob2-faq summary{list-style:none;cursor:pointer;padding:15px 27px 15px 0;font-size:14px;font-weight:820;position:relative}
+ .ob2-faq summary::-webkit-details-marker{display:none}
+ .ob2-faq summary:after{content:"+";position:absolute;right:0;top:8px;font-size:24px;color:#264c2b}
+ .ob2-faq details[open] summary:after{content:"−"}
+ .ob2-faq details p{font-size:13px;color:var(--muted);padding:0 0 17px}
+ .ob2-final{background:linear-gradient(145deg,#f3ead7,#e0e8dc);padding:66px 0}
+ .ob2-finalpanel{background:linear-gradient(135deg,#102b1b,#285032);border:1px solid #5d7663;border-radius:24px;padding:43px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:26px}
+ .ob2-finalpanel h2{color:#fff}
+ .ob2-finalpanel p:not(.ob2-eyebrow){color:#d6e5d6;font-size:14px;max-width:600px}
+ .ob2-finalbuttons{display:flex;flex-wrap:wrap;gap:10px;flex:none}
+ @media(max-width:1110px){
+  .ob2-hero{grid-template-columns:1fr 1fr;gap:25px}
+  .ob2-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ob2-card{min-height:215px}
+  .ob2-stepsinner{grid-template-columns:140px repeat(4,minmax(0,1fr));gap:10px}
+  .ob2-finalpanel{display:block}
+  .ob2-finalbuttons{margin-top:25px}
+ }
+ @media(max-width:840px){
+  .ob2-hero{grid-template-columns:1fr}
+  .ob2-photo{height:375px}
+  .ob2-stepsinner{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .ob2-steptitle{display:none}
+  .ob2-reuse-grid{grid-template-columns:1fr}
+  .ob2-reuse-pics figure:first-child{height:270px}
+  .ob2-reuse-pics figure:last-child{height:230px;margin-top:30px}
+  .ob2-eco-wrap{grid-template-columns:1fr}
+  .ob2-area-layout{grid-template-columns:1fr}
+ }
+ @media(max-width:650px){
+  .ob2-wrap{width:min(calc(100% - 28px),var(--max))}
+  .ob2-section{padding:54px 0}
+  .ob2-intro{padding:48px 0 50px}
+  .ob2-hero h1{font-size:clamp(38px,9.2vw,52px)}
+  .ob2-hero .ob2-lead{font-size:16px}
+  .ob2-actions{display:grid}
+  .ob2-btn{width:100%}
+  .ob2-photo{height:295px;border-radius:20px 20px 50px 20px}
+  .ob2-photo-credit{left:18px;right:18px;bottom:19px}
+  .ob2-photo-credit strong{font-size:15px}
+  .ob2-trust{margin-top:20px}
+  .ob2-stepsinner{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+  .ob2-service{padding-top:58px}
+  .ob2-sectionhead{display:block}
+  .ob2-sectionhead .ob2-link{display:inline-block;margin-top:12px}
+  .ob2-cards{gap:10px}
+  .ob2-card{padding:17px;min-height:225px}
+  .ob2-card .ob2-icon{width:40px;height:40px;font-size:21px}
+  .ob2-card h3{font-size:17px}
+  .ob2-card p{font-size:12px}
+  .ob2-reuse-pics{gap:10px}
+  .ob2-reuse-pics figure:first-child{height:222px}
+  .ob2-reuse-pics figure:last-child{height:181px;margin-top:23px}
+  .ob2-bizlayout{grid-template-columns:1fr}
+  .ob2-bizmain,.ob2-bizaside{padding:27px}
+  .ob2-eco-links{grid-template-columns:1fr}
+  .ob2-eco-links a{padding:16px 25px;border-right:0;border-bottom:1px solid #d7e3d6}
+  .ob2-faq{padding:54px 0}
+  .ob2-faq-inner{grid-template-columns:1fr;gap:19px}
+  .ob2-finalpanel{padding:30px 24px}
+ }
+ @media(max-width:370px){.ob2-cards{grid-template-columns:1fr}.ob2-card{min-height:155px}}
+ @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ob2-btn,.ob2-card{transition:none}}
+ </style>
+</head>
+<body>
+<a class="ob2-skip" href="#main">Hoppa till innehållet</a>
+<div class="ob2-preview" role="note">Örebro – ny startsida · förhandsvisning · den ordinarie sidan är oförändrad</div>
+<div id="site-header"></div>
+<noscript><p style="padding:12px;text-align:center;background:#fff"><a href="/salj-till-oss.html">Sälj till oss</a> · <a href="/orter.html">Orter</a> · <a href="https://www.facebook.com/profile.php?id=61592291616762">Facebook</a></p></noscript>
+<main id="main">
+ <section class="ob2-intro" aria-labelledby="ob2-main-title">
+  <div class="ob2-wrap ob2-hero">
+   <div>
+    <p class="ob2-eyebrow">Örebro Maskin &amp; Återbruk · Utgår från Pålsboda</p>
+    <h1 id="ob2-main-title">Maskiner som bara står? <em>Vi vill gärna se dem.</em></h1>
+    <p class="ob2-lead">Vi köper maskiner, verktyg och reservdelar i Örebroregionen. Fungerande eller trasigt – skicka några bilder, berätta var sakerna finns och vad du vet om skicket, så tar vi det därifrån.</p>
+    <div class="ob2-actions">
+     <a class="ob2-btn primary" href="https://www.facebook.com/profile.php?id=61592291616762" target="_blank" rel="noopener noreferrer">📷 Skicka bilder via Facebook ↗</a>
+     <a class="ob2-btn outline" href="sms:+46727483256">💬 Skicka SMS ↗</a>
+    </div>
+    <p class="ob2-contacthint">Vill du veta mer först? <a href="/salj-till-oss.html">Så säljer du till oss →</a></p>
+    <div class="ob2-trust"><span>Även trasiga objekt</span><span>Personlig bedömning</span><span>För privatpersoner &amp; företag</span><span>Hämtning efter överenskommelse</span></div>
+   </div>
+   <figure class="ob2-photo">
+    <img src="https://skaraborgmaskin.se/indexhero.jpg" width="1076" height="1307" alt="Lastbil från vår gemensamma maskinverksamhet, fotograferad i Skaraborg" fetchpriority="high" decoding="async">
+    <figcaption class="ob2-photo-credit"><strong>Vi tror på att saker kan få ett nytt liv.</strong><small>Bild från systerverksamheten i Skaraborg. Örebro Maskin &amp; Återbruk arbetar med lokala inköp och återbruk i Örebroregionen.</small></figcaption>
+   </figure>
+  </div>
+ </section>
+ <section class="ob2-steps" aria-labelledby="ob2-steps-title">
+  <div class="ob2-wrap ob2-stepsinner">
+   <div class="ob2-steptitle"><strong id="ob2-steps-title">Så enkelt börjar vi.</strong><a href="/sa-funkar-det.html">Läs hela processen ↗</a></div>
+   <div class="ob2-step"><i>1</i><span>Skicka 1–3 bilder</span></div>
+   <div class="ob2-step"><i>2</i><span>Berätta ort och skick</span></div>
+   <div class="ob2-step"><i>3</i><span>Vi gör en bedömning</span></div>
+   <div class="ob2-step"><i>4</i><span>Pris och hämtning vid affär</span></div>
+  </div>
+ </section>
+ <section class="ob2-section ob2-service" id="tjanster" aria-labelledby="ob2-services-title">
+  <div class="ob2-wrap">
+   <p class="ob2-eyebrow">01 / Våra tjänster</p>
+   <div class="ob2-sectionhead"><div><h2 id="ob2-services-title">Vad vill du göra?</h2><p class="ob2-lead">Vi börjar med en enkel kontakt, oavsett om det gäller en maskin eller ett större parti.</p></div><a class="ob2-link" href="/kop-maskiner.html">Se vad vi köper ↗</a></div>
+   <div class="ob2-cards">
+    <a class="ob2-card primary" href="/salj-till-oss.html"><span class="ob2-icon">⚙</span><h3>Sälj maskiner</h3><p>Gräsklippare, riders, motorer, redskap och maskiner i varierande skick.</p><b>Kom igång <span aria-hidden="true">↗</span></b></a>
+    <a class="ob2-card" href="/vardering.html"><span class="ob2-icon">⌕</span><h3>Värdering</h3><p>Få hjälp att förstå vad modell, skick och efterfrågan betyder för priset.</p><b>Så bedömer vi <span aria-hidden="true">↗</span></b></a>
+    <a class="ob2-card" href="/ge-till-aterbruk.html"><span class="ob2-icon">♻</span><h3>Ge till återbruk</h3><p>Har du något som är för bra för att kasta? Fråga om vi kan ta emot det.</p><b>Ge en andra chans <span aria-hidden="true">↗</span></b></a>
+    <a class="ob2-card" href="/foretag.html"><span class="ob2-icon">▤</span><h3>För företag</h3><p>Maskiner, verkstadsutrustning och reservdelspartier som blivit över.</p><b>Företagsförfrågan <span aria-hidden="true">↗</span></b></a>
+   </div>
+   <div class="ob2-secondary"><strong>Populära objekt</strong>
+    <a href="/salja-akgrasklippare.html">Åkgräsklippare</a>
+    <a href="/salja-trasiga-maskiner.html">Trasiga maskiner</a>
+    <a href="/salja-traktor-redskap.html">Traktorer &amp; redskap</a>
+    <a href="/salja-reservdelar.html">Reservdelar</a>
+    <a href="/salja-verktyg.html">Verktyg</a>
+    <a href="/salja-motorer.html">Motorer</a>
+    <a href="/salja-maskinparti.html">Hela maskinpartier</a>
+   </div>
+  </div>
+ </section>
+ <section class="ob2-section ob2-reuse" id="aterbruk" aria-labelledby="ob2-reuse-title">
+  <div class="ob2-wrap ob2-reuse-grid">
+   <div class="ob2-reuse-copy">
+    <p class="ob2-eyebrow is-light">02 / Maskiner får nya möjligheter</p>
+    <h2 id="ob2-reuse-title">En trasig maskin behöver inte vara värdelös.</h2>
+    <p>En gammal gräsklippare kan fortfarande ha en användbar motor. En trasig rider kan bli delar till en annan maskin. Därför tittar vi gärna på sådant som inte längre används.</p>
+    <div class="ob2-reuse-links">
+     <a href="/salja-trasiga-maskiner.html">Sälja trasigt ↗</a>
+     <a href="/aterbruk.html">Så arbetar vi med återbruk ↗</a>
+     <a href="/vad-ar-min-maskin-vard.html">Vad kan maskinen vara värd? ↗</a>
+    </div>
+   </div>
+   <div class="ob2-reuse-pics">
+    <figure><img src="https://skaraborgmaskin.se/bilder/hjo/akgrasklippare-parti-slap.webp" alt="Begagnade åkgräsklippare på släp från systerverksamhetens arbete i Skaraborg" loading="lazy" decoding="async"><figcaption>Begagnade maskiner kan bli nya fynd eller reservdelar.</figcaption></figure>
+    <figure><img src="https://skaraborgmaskin.se/bilder/hjo/verkstad-motorutrustning.webp" alt="Motorer och verkstadsutrustning från verksamheten i Skaraborg" loading="lazy" decoding="async"><figcaption>Även lösa delar har potential.</figcaption></figure>
+   </div>
+  </div>
+ </section>
+ <section class="ob2-section ob2-biz" id="foretag" aria-labelledby="ob2-biz-title">
+  <div class="ob2-wrap">
+   <p class="ob2-eyebrow">03 / Fler möjligheter</p>
+   <h2 id="ob2-biz-title">Från enskilda fynd till större partier.</h2>
+   <p class="ob2-lead" style="margin-bottom:25px">Vi tar även emot förfrågningar när mycket utrustning blivit stående på samma plats.</p>
+   <div class="ob2-bizlayout">
+    <article class="ob2-bizmain"><p class="ob2-eyebrow">Företag, garage &amp; verkstäder</p><h3>Maskiner och utrustning som ingen använder?</h3><p>Vi kan köpa relevanta maskiner, verktyg, reservdelar och partier. Skicka översiktsbilder först, så ser vi om det passar oss.</p><a class="ob2-btn primary" href="/verkstadsutrensning.html">Verkstadsobjekt &amp; överskott ↗</a></article>
+    <article class="ob2-bizaside"><p class="ob2-eyebrow">Privatpersoner &amp; lantbruk</p><h3>Det kan vara värt att fråga.</h3><p>Allt från enstaka motorer till flera redskap och ett blandat maskinparti kan vara intressant. Vi bedömer förfrågningar individuellt.</p><a class="ob2-link" href="/salja-maskinparti.html">Visa oss ditt maskinparti ↗</a></article>
+   </div>
+  </div>
+ </section>
+ <section class="ob2-section ob2-areas" id="omrade" aria-labelledby="ob2-areas-title">
+  <div class="ob2-wrap ob2-area-layout">
+   <div>
+    <p class="ob2-eyebrow">04 / Nära dig</p>
+    <h2 id="ob2-areas-title">Vi utgår från Pålsboda.</h2>
+    <p>Vi arbetar i Örebroregionen och Närke. Vid större eller särskilt intressanta objekt kan vi även diskutera längre transporter. Hämtning bedöms alltid utifrån vad det gäller och var det finns.</p>
+    <a class="ob2-link" href="/orter.html">Se hela vårt område ↗</a>
+   </div>
+   <nav class="ob2-cities" aria-label="Läs mer om lokala områden">
+    <a href="/palsboda.html">Pålsboda ↗</a>
+    <a href="/orebro.html">Örebro ↗</a>
+    <a href="/hallsberg.html">Hallsberg ↗</a>
+    <a href="/kumla.html">Kumla ↗</a>
+    <a href="/askersund.html">Askersund ↗</a>
+    <a href="/fjugesta.html">Fjugesta ↗</a>
+    <a href="/laxa.html">Laxå ↗</a>
+    <a href="/nora.html">Nora ↗</a>
+    <a href="/lindesberg.html">Lindesberg ↗</a>
+    <a href="/karlskoga.html">Karlskoga ↗</a>
+    <a href="/degerfors.html">Degerfors ↗</a>
+   </nav>
+  </div>
+ </section>
+ <section class="ob2-ecosystem" aria-labelledby="ob2-network-title">
+  <div class="ob2-wrap">
+   <div class="ob2-eco-wrap">
+    <div class="ob2-eco-intro"><strong id="ob2-network-title">Mer från vår verksamhet.</strong><p>Örebro är vår lokala inköps- och återbrukssatsning. Du kan också upptäcka de andra delarna av verksamheten.</p></div>
+    <nav class="ob2-eco-links" aria-label="Våra andra webbplatser">
+     <a href="https://skaraborgmaskin.se/"><b>Skaraborg</b><small>Maskiner, annonser och återbruk</small><span>Besök ↗</span></a>
+     <a href="https://skaraborgmaskin.se/maskinarkivet.html"><b>Maskinarkivet</b><small>Guider, modellfakta och felsökning</small><span>Utforska ↗</span></a>
+     <a href="https://skaraborgmaskin.se/shopify.html"><b>Skaraborg Merch</b><small>Vår separata webbshop</small><span>Upptäck ↗</span></a>
+    </nav>
+   </div>
+  </div>
+ </section>
+ <section class="ob2-faq" id="faq" aria-labelledby="ob2-faq-title">
+  <div class="ob2-wrap ob2-faq-inner">
+   <div><p class="ob2-eyebrow">Vanliga frågor</p><h2 id="ob2-faq-title">Bra att veta.</h2><p class="ob2-lead">Du behöver inte ha alla svar för att höra av dig till oss.</p></div>
+   <div class="ob2-faq-list">
+    <details><summary>Köper ni även trasiga maskiner?</summary><p>Ja, det kan vara intressant beroende på modell, skick och vilka delar som finns kvar. Skicka gärna bilder för en första bedömning.</p></details>
+    <details><summary>Måste jag veta vad maskinen är värd?</summary><p>Nej. Skriv gärna vad du tänkt dig i pris om du har en uppfattning, annars kan vi börja med bilder och information.</p></details>
+    <details><summary>Kan ni hämta maskinerna hos mig?</summary><p>Hämtning kan vara möjlig efter bedömning och överenskommelse. Det beror på objekt, mängd, plats och transportmöjligheter.</p></details>
+    <details><summary>Hur kontaktar jag er enklast?</summary><p>Skicka gärna 1–3 bilder och skriv ort, skick och eventuell prisidé via vår Facebook-sida eller SMS.</p></details>
+   </div>
+  </div>
+ </section>
+ <section class="ob2-final" id="kontakt" aria-labelledby="ob2-contact-title">
+  <div class="ob2-wrap">
+   <div class="ob2-finalpanel">
+    <div><p class="ob2-eyebrow is-light">Ta första steget</p><h2 id="ob2-contact-title">Vad har du stående?</h2><p>Det räcker ofta med några bilder för att starta en dialog. Berätta vad du har, var det finns och vilket skick det är i.</p></div>
+    <div class="ob2-finalbuttons">
+     <a class="ob2-btn gold" href="https://www.facebook.com/profile.php?id=61592291616762" target="_blank" rel="noopener noreferrer">📷 Facebook ↗</a>
+     <a class="ob2-btn light" href="sms:+46727483256">💬 SMS ↗</a>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+<div id="site-footer"></div>
+<script>
+async function injectPartial(id, url){
+ const el=document.getElementById(id);if(!el)return;
+ try{
+  const response=await fetch(url,{cache:"no-cache"});
+  if(!response.ok)throw new Error("Kunde inte läsa "+url);
+  el.innerHTML=await response.text();
+  if(id==="site-header")initHeader();
+  if(id==="site-footer")initFooter();
+ }catch(error){console.error(error);}
+}
+function initHeader(){
+ const header=document.querySelector(".orebro-site-header");if(!header)return;
+ const button=header.querySelector(".orebro-menu-button");
+ const nav=header.querySelector(".orebro-nav");
+ if(!button||!nav)return;
+ const current=window.location.pathname.replace(/\/+$/,"")||"/";
+ nav.querySelectorAll('a[href^="/"]').forEach(function(link){
+  const p=new URL(link.href,location.origin).pathname.replace(/\/+$/,"")||"/";
+  if(p===current||current==="/index.html"&&p==="/")link.setAttribute("aria-current","page");
+ });
+ button.addEventListener("click",function(){
+  const open=nav.classList.toggle("is-open");
+  button.setAttribute("aria-expanded",String(open));
+  button.setAttribute("aria-label",open?"Stäng meny":"Öppna meny");
+  button.textContent=open?"×":"☰";
+ });
+ nav.querySelectorAll("a").forEach(function(link){
+  link.addEventListener("click",function(){
+   nav.classList.remove("is-open");button.setAttribute("aria-expanded","false");
+   button.setAttribute("aria-label","Öppna meny");button.textContent="☰";
+  });
+ });
+}
+function initFooter(){
+ const year=document.querySelector(".orebro-footer-year");
+ if(year)year.textContent=new Date().getFullYear();
+}
+injectPartial("site-header","partials/header.html");
+injectPartial("site-footer","partials/footer.html");
+</script>
+</body></html>
