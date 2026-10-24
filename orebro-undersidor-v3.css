@@ -1,0 +1,92 @@
+/* Örebro undersidor version 3.0 – byggd efter Skaraborgs kapitelmall, oktober 2026.
+   Äldre sidor behåller sina sidunika sektioner, information och interna länkar.
+   Denna fil stylar både strukturen och nya unika berättande block. */
+:root{--orebro-pine:#17331f;--orebro-gold:#d8a52e;--orebro-sage:#e8f0e6;--orebro-cream:#f7f3e9;--orebro-ink:#142619;}
+body.orebro-unified{--brand:#1f3322;--brand-dark:#142317;--brand-mid:#304936;--soft:#eaf1e8;--accent:#d8a52e;--bg:#f7f8f6;--card:#fff;--text:#142619;--muted:#526458;--line:#dce5dc;--radius:20px;--radius-sm:15px;--shadow:0 14px 38px rgba(20,42,25,.08);--max:1120px;background:#f7f8f6;color:#142619;line-height:1.68;}
+body.orebro-unified .wrap{width:min(calc(100% - 40px),1120px);margin-inline:auto}
+body.orebro-unified a:focus-visible,body.orebro-unified button:focus-visible,body.orebro-unified summary:focus-visible{outline:3px solid #d8a52e;outline-offset:4px}
+body.orebro-unified h1,body.orebro-unified h2,body.orebro-unified h3{line-height:1.15;letter-spacing:-.026em;text-wrap:balance}
+body.orebro-unified main>section.hero{
+ background:radial-gradient(circle at 85% 16%,rgba(216,165,46,.20),transparent 33%),
+            radial-gradient(circle at 14% 100%,rgba(255,255,255,.075),transparent 33%),
+            linear-gradient(130deg,#142317,#31503a);
+ color:#fff;padding:65px 0 72px;overflow:hidden;position:relative;
+}
+body.orebro-unified .hero-grid{grid-template-columns:minmax(0,1.13fr) minmax(290px,.87fr);align-items:center;gap:48px}
+body.orebro-unified main .hero h1{color:#fff;font-size:clamp(40px,5.3vw,69px);line-height:1.09;letter-spacing:-.055em;max-width:17ch;margin:0 0 19px}
+body.orebro-unified main .hero .lead{font-size:clamp(16px,1.85vw,19px);line-height:1.75;color:#dae9de;max-width:650px}
+body.orebro-unified main .hero .eyebrow{display:inline-flex;letter-spacing:.095em;font-size:11px;color:#f1d590;margin-bottom:18px}
+body.orebro-unified main .hero .eyebrow::before{background:#dbac49;width:25px}
+body.orebro-unified main .hero .hero-card{
+ padding:29px;background:rgba(7,22,12,.46);color:#fff;border:1px solid rgba(255,255,255,.2);
+ border-radius:22px;box-shadow:0 23px 50px rgba(6,16,9,.2)
+}
+body.orebro-unified main .hero .hero-card h2,body.orebro-unified main .hero .hero-card h3{color:#fff;font-size:clamp(21px,2vw,26px)}
+body.orebro-unified main .hero .hero-card p,body.orebro-unified main .hero .hero-card li{color:#e3ebe3}
+body.orebro-unified main .hero .hero-card .check-list li:before{background:rgba(216,165,46,.16);color:#f2d48b}
+body.orebro-unified main .hero .actions{margin-top:27px;gap:10px}
+body.orebro-unified main .hero .btn{font-size:14px;font-weight:850;border-radius:12px;min-height:51px}
+body.orebro-unified main .hero .btn-primary{background:#f7f6f0;color:#17351e;border:1px solid #fff;box-shadow:none}
+body.orebro-unified main .hero .btn-primary:hover{background:#e3eee1;color:#17351e}
+body.orebro-unified main .hero .btn-secondary{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}
+body.orebro-unified main .hero .btn-secondary:hover{background:rgba(255,255,255,.08)}
+body.orebro-unified main .breadcrumbs{background:#f0f4ef;border-bottom:1px solid #d9e3d9;color:#45584a}
+body.orebro-unified main .breadcrumbs a{color:#234d2d;text-decoration:underline;text-underline-offset:3px}
+/* Ny narrativ / redaktionell sektion, med verkligt bildmaterial från systerverksamheten */
+body.orebro-unified main .orebro-story{padding:62px 0;background:#f5f1e8;position:relative}
+body.orebro-unified main .orebro-story:nth-of-type(even){background:#e7f0e4}
+body.orebro-unified main .orebro-story-inner{display:grid;grid-template-columns:1.16fr .84fr;gap:45px;align-items:center}
+body.orebro-unified main .orebro-story-copy{max-width:690px}
+body.orebro-unified main .orebro-story-label{display:block;color:#926b22;font-weight:900;letter-spacing:.11em;font-size:11px;text-transform:uppercase;margin-bottom:14px}
+body.orebro-unified main .orebro-story h2{font-size:clamp(30px,3.5vw,46px);margin:0 0 16px;color:#172b1b;letter-spacing:-.047em}
+body.orebro-unified main .orebro-story p{font-size:16px;line-height:1.8;color:#4e6152}
+body.orebro-unified main .orebro-story .orebro-story-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:20px}
+body.orebro-unified main .orebro-story .orebro-story-actions a{font-size:13px;font-weight:850;color:#25532c;text-underline-offset:4px}
+body.orebro-unified main .orebro-story figure{margin:0;background:#d1decf;border-radius:22px;overflow:hidden;box-shadow:0 15px 35px rgba(15,42,20,.12)}
+body.orebro-unified main .orebro-story img{width:100%;height:295px;display:block;object-fit:cover}
+body.orebro-unified main .orebro-story figcaption{font-size:11px;padding:12px 15px;background:#fff;color:#607365;line-height:1.55}
+body.orebro-unified main>section.section-white{background:#fff}
+body.orebro-unified main>section.section-white:nth-of-type(4n+1){background:#faf8f2}
+body.orebro-unified main>section.section-soft{background:#edf4eb}
+body.orebro-unified main>section.section-dark{background:linear-gradient(137deg,#193320,#33563c);color:#fff}
+body.orebro-unified main>section.section-dark h2,body.orebro-unified main>section.section-dark h3{color:#fff}
+body.orebro-unified main>section.section-dark .kicker{color:#ebce8e}
+body.orebro-unified main>section.section-dark .section-head p{color:#dde8df}
+body.orebro-unified main .section-head{max-width:825px;margin-bottom:31px}
+body.orebro-unified main .section-head h2{font-size:clamp(27px,3.7vw,45px);letter-spacing:-.047em}
+body.orebro-unified main .section-head p{line-height:1.73;color:#56685a}
+body.orebro-unified main .kicker{font-size:11px;font-weight:900;letter-spacing:.11em;color:#84632a}
+body.orebro-unified main .card,body.orebro-unified main .link-card,body.orebro-unified main .ort-card,body.orebro-unified main .value-card,body.orebro-unified main .info-card,body.orebro-unified main .step,body.orebro-unified main .factor{
+ background:#fff;border:1px solid #dae5dc;box-shadow:0 7px 25px rgba(20,42,25,.047);border-radius:18px;
+}
+body.orebro-unified main .card h3,body.orebro-unified main .link-card strong{color:#193620}
+body.orebro-unified main .card p,body.orebro-unified main .step p{color:#526458}
+body.orebro-unified main .icon{background:#eaf1e8;color:#2b5434}
+body.orebro-unified main .feature{background:linear-gradient(135deg,#1b3622,#30543a);color:white;box-shadow:0 15px 32px rgba(20,42,25,.14)}
+body.orebro-unified main .feature h3,body.orebro-unified main .feature h2{color:white}
+body.orebro-unified main .feature p{color:#dce9de}
+body.orebro-unified main .step-number{background:#d8a52e;color:#192619}
+body.orebro-unified main .notice{background:#f5eddc;border-color:#e6d8b6;color:#324337}
+body.orebro-unified main details{background:#fff;border:1px solid #d4e1d4;border-radius:15px;box-shadow:0 4px 17px rgba(20,42,25,.04)}
+body.orebro-unified main summary{color:#1b3823;font-weight:850}
+body.orebro-unified main summary:after{background:#edf3e9;color:#244c2d}
+body.orebro-unified main .local-links a,body.orebro-unified main .area-tags a,body.orebro-unified main .orebro-area-link-grid a,body.orebro-unified main .intent-links a{background:#fff;border-color:#dce5d8;color:#274b2d}
+body.orebro-unified main .cta{background:linear-gradient(130deg,#132b1b,#33593d);border-radius:22px;border-top:3px solid #d8a52e;color:#fff;box-shadow:0 18px 40px rgba(15,36,21,.14)}
+body.orebro-unified main .cta h2{color:#fff}
+body.orebro-unified main .cta p{color:#dce6de}
+body.orebro-unified main .cta .btn-primary{background:#e8c77f;color:#203520;border-color:transparent}
+body.orebro-unified main .cta .btn-secondary{background:transparent;color:white;border:1px solid rgba(255,255,255,.5)}
+@media(max-width:930px){body.orebro-unified main .hero-grid,body.orebro-unified main .orebro-story-inner{grid-template-columns:1fr}body.orebro-unified main .orebro-story figure{max-width:570px}body.orebro-unified main .hero h1{max-width:20ch}}
+@media(max-width:650px){
+ body.orebro-unified .wrap{width:min(calc(100% - 28px),1120px)}
+ body.orebro-unified main>section.hero{padding:50px 0 56px}
+ body.orebro-unified main .hero h1{font-size:clamp(38px,9vw,52px)}
+ body.orebro-unified main .hero .hero-card{padding:23px}
+ body.orebro-unified main .orebro-story{padding:48px 0}
+ body.orebro-unified main .orebro-story-inner{gap:23px}
+ body.orebro-unified main .orebro-story img{height:215px}
+ body.orebro-unified main>section.section-white,body.orebro-unified main>section.section-soft{padding:53px 0}
+ body.orebro-unified main .hero .actions{flex-direction:column;align-items:stretch}
+ body.orebro-unified main .hero .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
