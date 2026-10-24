@@ -151,12 +151,24 @@
         font-size:10px;
       }
     }
-  </style>
+  
+#site-header{position:sticky;top:0;z-index:1200}
+.orebro-site-header{position:relative;background:rgba(246,249,245,.98);border-bottom-color:#cbd9c9;box-shadow:0 8px 18px rgba(20,45,26,.05)}
+.orebro-header-wrap{width:min(calc(100% - 44px),1180px);min-height:75px}
+.orebro-brand{color:#112b1a}
+.orebro-brand-sub{color:#597461;font-weight:800}
+.orebro-nav a{font-weight:800;color:#25472d}
+.orebro-nav a:hover,.orebro-nav a:focus-visible,.orebro-nav a[aria-current="page"]{background:#dcebd9;color:#112b1a}
+.orebro-nav .orebro-contact{background:#193824;color:white}
+.orebro-nav .orebro-contact:hover{background:#2d5536;color:white}
+@media(max-width:920px){.orebro-nav{background:#f6f9f5;border-bottom-color:#c8d9c8}}
+@media(max-width:520px){.orebro-header-wrap{width:min(calc(100% - 28px),1180px)}}
+</style>
 
   <div class="orebro-header-wrap">
     <a class="orebro-brand" href="/" aria-label="Örebro Maskin & Återbruk – startsida">
       <span class="orebro-brand-name">Örebro Maskin &amp; Återbruk</span>
-      <span class="orebro-brand-sub">Lokalt • personligt • återbruk</span>
+      <span class="orebro-brand-sub">Utgångspunkt Pålsboda • Maskinuppköp</span>
     </a>
 
     <button
