@@ -2,15 +2,16 @@
 
 ## Kontakter och integritet (viktigt)
 
-**Visa inte ett privat eller gemensamt telefonnummer på Örebros publika webbplats.**
+**Kunder får skicka SMS, men telefonnumret ska inte skyltas med i Örebros sidinnehåll.**
 
-- Publicera inga telefonnummer på HTML-sidor, i sidfot, sidhuvud, metadata, strukturerad data (JSON-LD), bilder, alt-texter eller framtida landningssidor.
-- Lägg inte in `tel:`- eller `sms:`-länkar eller formuleringar som ber besökare ringa eller skicka SMS.
-- Kopiera inte telefonnummer från skaraborgmaskin.se, även om verksamheterna drivs av samma aktiebolag.
-- Kontaktvägen för Örebro är den **egna Facebooksidan**: https://www.facebook.com/profile.php?id=61592291616762
-- Länka alternativt till /kontakt.html, som förklarar hur man skickar bilder, ort och skick via Facebook.
-- Inför framtida ändringar: sök i ändrade filer efter telefonnummer, `tel:`, `sms:`, `telephone`, samt inaktuella SMS-/ringtexter.
-- Visa ett telefonnummer **endast efter uttryckligt nytt godkännande från ägaren**. Anta inte att ett offentligt nummer på Skaraborgs webbplats automatiskt får publiceras på Örebros webbplats.
+- Publicera inte telefonnumret i synlig text, sidfot, sidhuvud, metadata, strukturerad data (JSON-LD), bilder, alt-texter eller framtida landningssidor.
+- Tillåt tydligt märkta **”Skicka SMS”**-knappar med `sms:`-länk som går till verksamhetens befintliga gemensamma nummer. Håll dem till väl valda kontaktplatser (främst startsidan och /kontakt.html), inte varje undersida.
+- Numret finns tekniskt i länkmålet och kan ses i sidans HTML eller när kunden öppnar SMS-appen. **Det är inte hemligt genom att det saknas i synlig text.**
+- Lägg inte in `tel:`-länkar eller stora telefonnummerpresentationer.
+- Facebook-kontakten för Örebro är **den egna Facebooksidan**: https://www.facebook.com/profile.php?id=61592291616762
+- Övriga undersidor bör länka till /kontakt.html där kunden väljer Facebook eller SMS.
+- Vid framtida ändringar, kontrollera att numret inte råkar skrivas ut eller läggas i `telephone` i JSON-LD. Kopiera inte kontaktsektioner från skaraborgmaskin.se.
+- Ändra inte detta kontaktupplägg utan nytt uttryckligt godkännande från ägaren.
 
 ## Verksamhetens identitet
 
